@@ -1,0 +1,49 @@
+# Git Ignore Configuration for KNUST At-Risk Prediction Repository
+
+# Raw sensitive data containing student mental health details (HuSSREC protected)
+/KNUST Student Experience Survey 2026.csv
+/raw_data/
+/data/KNUST Student Experience Survey 2026.csv
+
+# Word documents, draft manuscripts, and research proposals (managed locally)
+*.docx
+*.pdf
+*.md.resolved*
+/BJET_Section_A_Draft.md
+/BJET_Section_B_Draft.md
+/BJET_Section_B_Notes.md
+/proposal.txt
+
+# Jupyter Notebook checkpoints, caches, and raw debug notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+__pycache__/
+*/__pycache__/
+*.pyc
+/at_risk_tabpfn_and_shapiq_v5.ipynb
+
+# Local system files
+.DS_Store
+Thumbs.db
+
+# Gemini / Antigravity workspace files
+.agents/
+.gemini/
+/revisions_history/
+/compiler/
+/scratch/
+/BJET_Method_Section_Draft.docx
+/BJET_Method_Section_v2.docx
+/BJET_Method_and_Results_Draft.docx
+/BJET_Results_Section_Draft.docx
+/BJET_Results_Section_v2.docx
+/BJET_Defense_Guide.md
+/BJET_Verification_Report.md
+/BJET_Revision_Roadmap.md
+/Group6_REVISED_Assessment_Report_KNUST_EWS.docx
+/Model_Engineering_Plan_Group6.docx
+/generate_method_section.py
+/generate_results_section.py
+/generate_results_v2.py
+/framework.png
+/output.png
