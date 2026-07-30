@@ -4,7 +4,7 @@
 [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-310/)
 [![TabPFN v2](https://img.shields.io/badge/TabPFN-v2.0.0-orange.svg)](https://github.com/PriorLabs/TabPFN)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21709993.svg)](https://doi.org/10.5281/zenodo.21709993)
 
 > **Paper:** *"Explainable At-Risk Student Prediction at KNUST: Integrating Academic Behaviour, Mental Health, and Ghana-Specific Contextual Barriers Using TabPFN v2 and Shapley Interaction Values"*
 > — Under review, British Journal of Educational Technology (BJET)
@@ -153,7 +153,7 @@ If you use this code or the B-TabPFN module, please cite:
   journal = {British Journal of Educational Technology},
   year    = {2025},
   note    = {Under review. Code: https://github.com/Sarkodie1/at-risk-student-prediction-knust.
-             DOI: 10.5281/zenodo.XXXXXX}
+             DOI: 10.5281/zenodo.21709993}
 }
 ```
 
