@@ -80,9 +80,10 @@ Only aggregate or disclosure-controlled evidence is public. The repository does 
 
 ## Archive
 
-Latest archived version: [Zenodo concept DOI 10.5281/zenodo.21709992](https://doi.org/10.5281/zenodo.21709992).
+- Version-specific v1.1.0 archive: [DOI 10.5281/zenodo.22479886](https://doi.org/10.5281/zenodo.22479886)
+- Latest-version archive: [Zenodo concept DOI 10.5281/zenodo.21709992](https://doi.org/10.5281/zenodo.21709992)
 
-The concept DOI resolves to the latest Zenodo version. A version-specific DOI for v1.1.0 should be added to the GitHub release after the new Zenodo deposit is published.
+Use the version-specific DOI when citing the exact v1.1.0 analysis. The concept DOI resolves to the latest archived repository version.
 
 ## Software notice
 

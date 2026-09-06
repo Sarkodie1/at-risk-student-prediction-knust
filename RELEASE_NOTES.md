@@ -26,3 +26,8 @@ This release replaces the v1.0.1/v5.3 repository narrative with the completed, e
 - Locked results SHA-256: `985b2accf10f3148f4ecbcfb6a37e086b643a25e6c05128da066636b88b74435`
 
 The prior v1.0.1 state remains available through its Git tag and repository history.
+
+### Archive
+
+- Version-specific DOI: `10.5281/zenodo.22479886`
+- Concept DOI for the latest version: `10.5281/zenodo.21709992`
