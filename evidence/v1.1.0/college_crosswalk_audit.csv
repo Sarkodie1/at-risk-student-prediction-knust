@@ -1,0 +1,16 @@
+collected_category,conditional_text_present,mapped_official_college,mapping_basis,n
+College of Arts and Social Sciences,False,College of Humanities and Social Sciences,direct_or_current-college crosswalk,69
+College of Arts and Social Sciences,True,College of Humanities and Social Sciences,direct_or_current-college crosswalk,7
+College of Engineering,False,College of Engineering,direct_or_current-college crosswalk,39
+College of Engineering,True,College of Engineering,direct_or_current-college crosswalk,9
+College of Health Sciences,False,College of Health Sciences,direct_or_current-college crosswalk,46
+College of Health Sciences,True,College of Health Sciences,direct_or_current-college crosswalk,7
+College of Science,False,College of Science,direct_or_current-college crosswalk,143
+College of Science,True,College of Science,direct_or_current-college crosswalk,9
+Other Faculty,False,Unresolved Other,insufficient conditional free text,6
+Other Faculty,True,College of Agriculture and Natural Resources,conditional free-text crosswalk,13
+Other Faculty,True,College of Art and Built Environment,conditional free-text crosswalk,10
+Other Faculty,True,College of Humanities and Social Sciences,conditional free-text crosswalk,8
+Other Faculty,True,Unresolved Other,insufficient conditional free text,1
+School of Business,False,College of Humanities and Social Sciences,direct_or_current-college crosswalk,50
+School of Business,True,College of Humanities and Social Sciences,direct_or_current-college crosswalk,5

@@ -1,0 +1,29 @@
+{
+  "protocol_hash": "29313c3ae78b30ae423f74d7730651224e950488d1aa84799770ad23a6b841ff",
+  "raw_data_sha256": "923ba210fb834b9bf064d174ad4e0e8d07e576e78b48b8a78b3116037363e313",
+  "modelling_code_sha256": "c658251aa8a53f85d6241ee4b522a619d1509fa8cc207d9b8afcb86567b37751",
+  "analytic_row_ids_sha256": "1b8e49ec4caedcdb7fa25905f0a6eeecc7e3e571e99dcbcedbc1bf9652ecb33f",
+  "analytic_target_sha256": "ea321600e95a3c2cd6f4350d061f3b55bc778277e1ba4422a01025e1b32b8f37",
+  "development_row_ids_sha256": "7cada23a6d36fba7fc6d83a54ffc3dda3c47d80ca081d477c1a3972cbf66b23a",
+  "development_target_sha256": "f73268d9cc08d883278f4de179f03834865346cfa254928a198c4bc96cfb358f",
+  "heldout_row_ids_sha256": "6cd971c75fc39d28b8ee25456c555cbad11b15e97ced37c040c6716c14d50538",
+  "heldout_target_sha256": "0e3b9b37a743ae38c93242def1d3b24ac0ed91337b58c6a451519afe5384914e",
+  "feature_schema": [
+    "Q1_Academic_Performance",
+    "Q2_Attendance",
+    "Q3_Assignments",
+    "Q4_Repeating",
+    "Q6_PHQ2_Interest",
+    "Q7_PHQ2_Depressed",
+    "Q8_GAD2_Nervous",
+    "Q9_GAD2_Worry",
+    "Q10_Financial_Difficulty",
+    "Q11_Internet_Access",
+    "Q12_Outside_Responsibilities",
+    "Q14_Year",
+    "Q16_Belonging",
+    "Q13_Faculty"
+  ],
+  "split_seed": 42,
+  "modelling_fingerprint": "a8466486d0bfbeeb78bf2191e1df4047d77b528755f5497db77404e3d542a1e0"
+}

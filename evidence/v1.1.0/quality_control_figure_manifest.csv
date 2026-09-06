@@ -1,0 +1,5 @@
+relative_path,tier,manuscript_use
+figures/fig_calibration_by_partition.png,quality_control,not for direct manuscript numbering
+figures/fig_calibration_score_shift.png,quality_control,not for direct manuscript numbering
+figures/qc_heldout_test_confusion_matrices.png,quality_control,not for direct manuscript numbering
+figures/qc_threshold_sensitivity.png,quality_control,not for direct manuscript numbering

@@ -1,0 +1,11 @@
+dimension,group,sample_n,sample_dimension_total,sample_percent,inference_scope
+gender,Male,208,421,49.4061757719715,achieved voluntary undergraduate sample; descriptive only
+gender,Female,201,421,47.74346793349169,achieved voluntary undergraduate sample; descriptive only
+gender,Prefer not to say,12,421,2.8503562945368173,achieved voluntary undergraduate sample; descriptive only
+official_college,College of Science,151,421,35.86698337292162,achieved voluntary undergraduate sample; descriptive only
+official_college,College of Humanities and Social Sciences,139,421,33.0166270783848,achieved voluntary undergraduate sample; descriptive only
+official_college,College of Health Sciences,53,421,12.589073634204276,achieved voluntary undergraduate sample; descriptive only
+official_college,College of Engineering,48,421,11.401425178147269,achieved voluntary undergraduate sample; descriptive only
+official_college,College of Agriculture and Natural Resources,13,421,3.0878859857482186,achieved voluntary undergraduate sample; descriptive only
+official_college,College of Art and Built Environment,10,421,2.375296912114014,achieved voluntary undergraduate sample; descriptive only
+official_college,Unresolved Other,7,421,1.66270783847981,achieved voluntary undergraduate sample; descriptive only

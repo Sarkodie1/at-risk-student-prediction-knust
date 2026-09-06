@@ -1,0 +1,23 @@
+{
+  "parent_fsii_protocol_id": "2700a1b0c9e783b1cbbf436cca6c3c3687899038e7a662c3f55bec6efc39d21c",
+  "analysis": "non_distress_attribution_shift_sensitivity",
+  "features": [
+    "Q1_Academic_Performance",
+    "Q2_Attendance",
+    "Q3_Assignments",
+    "Q4_Repeating",
+    "Q10_Financial_Difficulty",
+    "Q11_Internet_Access",
+    "Q12_Outside_Responsibilities",
+    "Q14_Year",
+    "Q16_Belonging",
+    "Q13_Faculty"
+  ],
+  "selected_k": 1,
+  "context_identity_sha256": "43bce0cf6eb9137674ceafa2299bc9d792f56f687727b3b37cb463e77d48163b",
+  "prediction_target": "positive_class_probability_of_exact_final_model",
+  "budget": 1024,
+  "max_order": 2,
+  "interpretation": "attribution shift, not causal mediation",
+  "fsii_protocol_id": "ca756953ea5a577817991a81edb03d0a2380824158e7870f69d396e55ea3d246"
+}

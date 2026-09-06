@@ -1,0 +1,8 @@
+college,population_n,sample_n,sample_denominator,population_denominator,sample_percent,population_percent,percentage_point_difference,source,academic_year,interpretation
+College of Agriculture and Natural Resources,6072,13,421,70268,3.0878859857,8.6412022542,-5.5533162685,KNUST Quality Assurance and Planning Office (QAPO),2025/2026,descriptive composition difference; no representativeness inference
+College of Art and Built Environment,7413,10,421,70268,2.3752969121,10.5496100643,-8.1743131522,KNUST Quality Assurance and Planning Office (QAPO),2025/2026,descriptive composition difference; no representativeness inference
+College of Engineering,9905,48,421,70268,11.4014251781,14.0960323334,-2.6946071552,KNUST Quality Assurance and Planning Office (QAPO),2025/2026,descriptive composition difference; no representativeness inference
+College of Health Sciences,10256,53,421,70268,12.5890736342,14.5955484716,-2.0064748374,KNUST Quality Assurance and Planning Office (QAPO),2025/2026,descriptive composition difference; no representativeness inference
+College of Humanities and Social Sciences,18822,139,421,70268,33.0166270784,26.7860192406,6.2306078378,KNUST Quality Assurance and Planning Office (QAPO),2025/2026,descriptive composition difference; no representativeness inference
+College of Science,11259,151,421,70268,35.8669833729,16.0229407412,19.8440426318,KNUST Quality Assurance and Planning Office (QAPO),2025/2026,descriptive composition difference; no representativeness inference
+IDL,6541,0,421,70268,0.0,9.3086468947,-9.3086468947,KNUST Quality Assurance and Planning Office (QAPO),2025/2026,descriptive composition difference; no representativeness inference

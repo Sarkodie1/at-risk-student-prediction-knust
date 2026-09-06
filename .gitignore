@@ -1,98 +1,50 @@
-# ─────────────────────────────────────────────────────────────
-# .gitignore — KNUST At-Risk Prediction Repository
-# ─────────────────────────────────────────────────────────────
-
-# ── RAW / RESTRICTED DATA (HuSSREC ethics — DO NOT COMMIT) ──
-KNUST Student Experience Survey 2026.csv
-/data/KNUST Student Experience Survey 2026.csv
-/raw_data/
+# Restricted KNUST data and row-level derivatives
 knust_real_data.csv
 *_real_data.csv
 *_raw.csv
+raw_data/
+restricted/
+**/restricted/
+private_checkpoints/
+**/persistent_checkpoints/
+*.parquet
 
-# ── FULL NOTEBOOKS WITH OUTPUTS (too large; use cleaned version in notebooks/) ──
-/at_risk_tabpfn_and_shapiq_v5.ipynb
-/at_risk_tabpfn_and_shapiq_v5_1*.ipynb
-/at_risk_tabpfn_and_shapiq_v5_2*.ipynb
-/at_risk_tabpfn_and_shapiq_v5_3*.ipynb
-
-# ── WORD / PDF DRAFTS (internal working documents) ──
-*.docx
-*.pdf
-*.md.resolved*
-
-# ── INTERNAL DRAFT MARKDOWN FILES ──
-/BJET_Section_A_Draft.md
-/BJET_Section_B_Draft.md
-/BJET_Section_B_Notes.md
-/BJET_Defense_Guide.md
-/BJET_Verification_Report.md
-/BJET_Revision_Roadmap.md
-/BJET_Section_A_Final.md
-/proposal.txt
-/Dataset_Strategy_and_Results_Brief.md
-
-# ── INTERNAL GENERATION SCRIPTS (not part of reproducibility) ──
-/generate_method_section.py
-/generate_results_section.py
-/generate_results_v2.py
-
-# ── REVISION HISTORY & SCRATCH WORK ──
-/revisions_history/
-/compiler/
-/scratch/
-
-# ── FIGURES NOT IN FINAL PAPER ──
-/framework.png
-/output.png
-
-# ── JUPYTER / PYTHON CACHES ──
-.ipynb_checkpoints/
-*/.ipynb_checkpoints/
-__pycache__/
-*/__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.egg-info/
-dist/
-build/
-.eggs/
-
-# ── VIRTUAL ENVIRONMENTS ──
-venv/
-env/
+# Credentials and local configuration
 .env
-.venv/
-conda-env/
-
-# ── SECRETS & API KEYS (never commit these) ──
-.env
+.env.*
 *.env
 secrets.py
 secrets.json
 api_keys.txt
 *_api_key*
 *_secret*
+*token*
 
-# ── GEMINI / ANTIGRAVITY WORKSPACE ──
-.agents/
-.gemini/
+# Model weights and local analysis products
+*.pt
+*.pth
+*.pkl
+*.joblib
+models/
+artifacts_v6_13/
+v6_13_package_install.log
 
-# ── OS FILES ──
+# Working documents and local scratch files
+*.docx
+revisions_history/
+compiler/
+scratch/
+
+# Python, Jupyter, IDE and operating-system files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
 desktop.ini
-ehthumbs.db
-
-# ── IDE FILES ──
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# ── LARGE MODEL WEIGHTS / CHECKPOINTS (downloaded at runtime) ──
-*.pt
-*.pkl
-*.joblib
-/models/

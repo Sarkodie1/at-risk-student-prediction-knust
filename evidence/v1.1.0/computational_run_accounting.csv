@@ -1,0 +1,2 @@
+analysis_events_through_checkpoint_accounting,accounting_scope_end,completed_component_events,failed_component_events,interrupted_component_events,primary_fsii_jobs,primary_fsii_resumed_jobs,theory_fsii_jobs,theory_fsii_resumed_jobs,invalidated_fsii_checkpoints,interpretation
+99,decision provenance and checkpoint accounting,99,0,0,32,32,32,32,0,"Checkpoint-stage execution snapshot; later figure, table, and final-integrity components are reported in run_status_dashboard.csv."

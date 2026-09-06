@@ -1,0 +1,17 @@
+{
+  "raw_n": 422,
+  "analytic_n": 421,
+  "full_target": {
+    "0": 262,
+    "1": 159
+  },
+  "train": {
+    "0": 209,
+    "1": 127
+  },
+  "test": {
+    "0": 53,
+    "1": 32
+  },
+  "retained_feature_count": 14
+}

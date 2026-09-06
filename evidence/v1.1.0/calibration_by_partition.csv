@@ -1,0 +1,5 @@
+partition,model,n,brier,ece_10,calibration_intercept,calibration_slope,ece_note
+training_oof,Standard TabPFN v2,336,0.19189386486559362,0.05471696409707267,0.0007735965464504513,0.915383362084161,ten-bin ECE is descriptive and unstable in the 85-student holdout
+training_oof,B-TabPFN K=1 fixed-K development OOF,336,0.2012871093828989,0.09598138994936432,-0.48544879045469463,0.964193313871959,ten-bin ECE is descriptive and unstable in the 85-student holdout
+held_out_test,Standard TabPFN v2,85,0.19102874064196806,0.09749966605621227,-0.15104211123682884,0.8182013321840412,ten-bin ECE is descriptive and unstable in the 85-student holdout
+held_out_test,B-TabPFN K=1,85,0.21108601782869701,0.12664769642493304,-0.609163140500851,0.7561487449395965,ten-bin ECE is descriptive and unstable in the 85-student holdout

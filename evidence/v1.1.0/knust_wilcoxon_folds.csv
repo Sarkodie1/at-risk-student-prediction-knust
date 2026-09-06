@@ -1,0 +1,2 @@
+comparison,metric,n_pairs,alternative,method,statistic,p_value,rank_biserial,mean_paired_difference,selection_note,inference_role
+B-TabPFN nested K vs Standard TabPFN v2,outer_fold_recall,10,two-sided,exact,0.0,0.001953125,1.0,0.18846153846153846,K selected within each outer training fold,descriptive paired-fold evidence; folds are dependent

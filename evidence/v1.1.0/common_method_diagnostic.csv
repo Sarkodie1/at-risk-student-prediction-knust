@@ -1,0 +1,4 @@
+diagnostic,n,input_columns,first_component_variance_percent,interpretation_note
+all_14_predictors,421,14,22.35290479190218,A Harman result does not establish absence of common-method variance
+all_14_predictors_plus_self_report_target,421,15,22.45005256544898,A Harman result does not establish absence of common-method variance
+12_content_items_plus_self_report_target,421,13,25.860047840299654,A Harman result does not establish absence of common-method variance

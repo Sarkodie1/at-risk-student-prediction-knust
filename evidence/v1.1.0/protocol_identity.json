@@ -1,0 +1,7 @@
+{
+  "base_config_hash": "20ade7df67cae3f77f0ade1ad110b9af8ba218ff72b8e8b3c16e3ecfb072a70f",
+  "raw_data_sha256": "923ba210fb834b9bf064d174ad4e0e8d07e576e78b48b8a78b3116037363e313",
+  "modelling_code_sha256": "c658251aa8a53f85d6241ee4b522a619d1509fa8cc207d9b8afcb86567b37751",
+  "fsii_code_sha256": "9c14b7b63e9958b1bc02daa61167db331fd6642f71003ad045c33386cdb27de5",
+  "checkpoint_contract_version": "3.0"
+}

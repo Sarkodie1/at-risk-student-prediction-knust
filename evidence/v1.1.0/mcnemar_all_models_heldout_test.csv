@@ -1,0 +1,7 @@
+model_a,model_b,btabpfn_only_correct,comparator_only_correct,discordant_total,p_value_exact_two_sided,p_value_holm,family
+B-TabPFN K=1,Gaussian Naive Bayes,35,8,43,4.1934157934520044e-05,0.00025160494760712027,B-TabPFN versus all held-out-test comparators
+B-TabPFN K=1,KNN,12,7,19,0.359283447265625,1.0,B-TabPFN versus all held-out-test comparators
+B-TabPFN K=1,Logistic Regression,3,1,4,0.625,1.0,B-TabPFN versus all held-out-test comparators
+B-TabPFN K=1,Random Forest,4,2,6,0.6875,1.0,B-TabPFN versus all held-out-test comparators
+B-TabPFN K=1,Standard TabPFN v2,4,5,9,1.0,1.0,B-TabPFN versus all held-out-test comparators
+B-TabPFN K=1,XGBoost,6,2,8,0.2890625,1.0,B-TabPFN versus all held-out-test comparators

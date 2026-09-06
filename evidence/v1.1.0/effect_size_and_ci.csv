@@ -1,0 +1,3 @@
+analysis,n_pairs,mean_delta_recall,sd_delta,standardized_mean_fold_difference_descriptive,standard_error,ci_low,ci_high,test_statistic,p_value_two_sided,scope_note
+primary_nadeau_bengio_corrected_10fold,10,0.1884615385,0.0903115928,2.0867923218,0.0414953133,0.0945926183,0.2823304586,4.5417548052,0.0014023864,Nadeau–Bengio corrected uncertainty is primary; the standardized fold difference is descriptive because folds are dependent
+secondary_five_overlapping_split_seeds_descriptive,5,0.1875,0.0494105884,3.7947331922,0.0220970869,0.1261486512,0.2488513488,,,"overlapping random splits; descriptive only, not independent replication"

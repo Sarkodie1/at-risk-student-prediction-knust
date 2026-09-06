@@ -1,0 +1,4 @@
+comparison,overlapping_split_pairs,mean_recall_difference,median_recall_difference,minimum_recall_difference,maximum_recall_difference,splits_favouring_btabpfn,splits_tied,inference_role
+B-TabPFN vs Standard TabPFN v2,5,0.0816901408,0.073943662,0.0633802817,0.1197183099,5,0,descriptive sensitivity; overlapping random splits are not independent replicates
+B-TabPFN vs Logistic Regression,5,0.0295774648,0.0352112676,0.0,0.0563380282,4,1,descriptive sensitivity; overlapping random splits are not independent replicates
+B-TabPFN vs XGBoost,5,0.0478873239,0.0457746479,0.014084507,0.073943662,5,0,descriptive sensitivity; overlapping random splits are not independent replicates

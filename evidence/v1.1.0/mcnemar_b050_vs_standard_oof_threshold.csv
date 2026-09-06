@@ -1,0 +1,2 @@
+partition,model_a,model_a_threshold,model_b,model_b_threshold,both_correct,btabpfn_only_correct,standard_tuned_only_correct,both_wrong,method,p_value,threshold_selection
+held_out_test,B-TabPFN K=1,0.5,Standard TabPFN v2,0.12,31,30,8,16,exact two-sided McNemar,0.0004719867,Standard threshold selected from development OOF F2 only

@@ -1,0 +1,6 @@
+objective,method_step,result_artifact,answer_status
+RQ1a classifier comparison,nested equal-budget classical grids plus Standard TabPFN,oof_summary.csv; heldout_test_summary.csv,generated_from_analysis
+RQ1b minority recall recovery,balanced context at fixed t=0.50 plus threshold-tuned Standard comparator,heldout_test_model_comparison.csv; two_factor_ablation.csv,generated_from_analysis
+RQ2 explainability/interactions,aggregate FSII over all positive-target held-out students,fsii_population_summary.csv,generated_from_complete_aggregate_fsii_analysis
+RQ3 demographic fairness,"subgroup counts, Wilson recall intervals and EOD",fairness_subgroups.csv; fairness_equal_opportunity.csv,generated_with_sparse_group_limits
+External robustness,separate UCI training/testing protocol,uci_protocol.json; uci_summary.csv,algorithmic_robustness_with_distinct_outcome_construct

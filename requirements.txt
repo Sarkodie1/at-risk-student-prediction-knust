@@ -1,19 +1,13 @@
-# Core Scientific Stack
-numpy>=1.23.0
-pandas>=1.5.0
-scikit-learn>=1.2.0
-
-# Classifiers & Foundation Models
-tabpfn>=2.0.0
-xgboost>=1.7.0
-
-# Explainability & Fairness
-shapiq>=1.1.0
-
-# Visualisation
-matplotlib>=3.6.0
-seaborn>=0.12.0
-
-# Jupyter Environment
-ipykernel>=6.0.0
-notebook>=6.5.0
+# Explicit installation set used by the authoritative Colab notebook.
+# The Colab base image supplies NumPy, pandas, SciPy, PyTorch, matplotlib and seaborn;
+# their resolved versions are recorded in evidence/v1.1.0/environment.json.
+setuptools<82
+requests==2.32.4
+jedi>=0.16
+tabpfn==2.2.1
+shapiq==1.4.1
+xgboost==2.0.3
+statsmodels==0.14.6
+scikit-learn==1.4.2
+pyarrow==17.0.0
+ucimlrepo==0.0.7

@@ -1,0 +1,10 @@
+{
+  "primary_partition": "nested development OOF",
+  "operational_review_trigger": 0.2,
+  "dimension_verdicts": {
+    "Q13_Faculty": "inconclusive_relative_to_review_trigger",
+    "Q14_Year": "inconclusive_relative_to_review_trigger",
+    "Q15_Gender": "review_trigger_exceeded"
+  },
+  "overall_answer": "Fairness is not established. Any review-trigger exceedance requires subgroup investigation; intervals crossing the trigger are inconclusive, and sparse held-out cells prevent broad claims."
+}

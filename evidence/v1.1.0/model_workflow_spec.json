@@ -1,0 +1,110 @@
+{
+  "figure": "Figure 02",
+  "title": "B-TabPFN development and evaluation workflow",
+  "boxes": [
+    {
+      "x": 0.035,
+      "y": 0.65,
+      "width": 0.17,
+      "height": 0.18,
+      "title": "Locked analytic data",
+      "lines": [
+        "Prespecified target",
+        "14 predictors",
+        "Row identifiers"
+      ]
+    },
+    {
+      "x": 0.25,
+      "y": 0.65,
+      "width": 0.17,
+      "height": 0.18,
+      "title": "Preserved data split",
+      "lines": [
+        "Development partition",
+        "Held-out test partition",
+        "Stratified sampling"
+      ]
+    },
+    {
+      "x": 0.465,
+      "y": 0.65,
+      "width": 0.17,
+      "height": 0.18,
+      "title": "Fold-local processing",
+      "lines": [
+        "Imputation",
+        "Encoding",
+        "No holdout fitting"
+      ]
+    },
+    {
+      "x": 0.7,
+      "y": 0.68,
+      "width": 0.25,
+      "height": 0.14,
+      "title": "Standard TabPFN",
+      "lines": [
+        "Full fold-training context",
+        "Single fitted context"
+      ]
+    },
+    {
+      "x": 0.7,
+      "y": 0.43,
+      "width": 0.25,
+      "height": 0.18,
+      "title": "B-TabPFN contexts",
+      "lines": [
+        "All minority observations",
+        "Majority undersampling without replacement",
+        "K selected from {1, 5, 10, 15, 20}"
+      ]
+    },
+    {
+      "x": 0.465,
+      "y": 0.25,
+      "width": 0.17,
+      "height": 0.18,
+      "title": "Development evidence",
+      "lines": [
+        "Outer-fold OOF predictions",
+        "K and threshold analysis",
+        "Model comparison"
+      ]
+    },
+    {
+      "x": 0.25,
+      "y": 0.25,
+      "width": 0.17,
+      "height": 0.18,
+      "title": "Locked evaluation",
+      "lines": [
+        "One holdout application",
+        "Paired predictions",
+        "Calibration and errors"
+      ]
+    },
+    {
+      "x": 0.035,
+      "y": 0.25,
+      "width": 0.17,
+      "height": 0.18,
+      "title": "Research outputs",
+      "lines": [
+        "Tables and figures",
+        "Subgroup evidence",
+        "Counsellor-facing translation"
+      ]
+    }
+  ],
+  "balance_mechanism": "All minority observations plus majority undersampling without replacement.",
+  "candidate_k": [
+    1,
+    5,
+    10,
+    15,
+    20
+  ],
+  "selection_scope": "Development partition only"
+}

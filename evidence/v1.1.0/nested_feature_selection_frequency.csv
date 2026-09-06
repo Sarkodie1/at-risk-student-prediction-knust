@@ -1,0 +1,15 @@
+feature,selected_folds,total_outer_folds
+Q10_Financial_Difficulty,4,10
+Q11_Internet_Access,3,10
+Q12_Outside_Responsibilities,2,10
+Q13_Faculty,5,10
+Q14_Year,1,10
+Q16_Belonging,6,10
+Q1_Academic_Performance,3,10
+Q2_Attendance,5,10
+Q3_Assignments,4,10
+Q4_Repeating,8,10
+Q6_PHQ2_Interest,9,10
+Q7_PHQ2_Depressed,10,10
+Q8_GAD2_Nervous,5,10
+Q9_GAD2_Worry,10,10

@@ -1,0 +1,8 @@
+{
+  "primary_jobs": 32,
+  "pilot_jobs": 6,
+  "selected_k": 1,
+  "prediction_scale": "positive-class probability",
+  "protocol_id": "2700a1b0c9e783b1cbbf436cca6c3c3687899038e7a662c3f55bec6efc39d21c",
+  "estimated_runtime_note": "pilot and primary population stage are independently resumable"
+}

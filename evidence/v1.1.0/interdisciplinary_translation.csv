@@ -1,0 +1,6 @@
+metric,reported_value,construct,behavioural_meaning,stakeholder_consequence
+Recall,0.71875,coverage of concurrent withdrawal-consideration cases,23 of 32 positive-target students were flagged,9 positive-target students were missed and would require another safety route
+AUC-ROC,0.742629716981132,triage ranking discrimination,chance that a randomly chosen positive-target student receives a higher score than a negative-target student,supports queue ordering; it is not percent correctly classified
+F2,0.6927710843373494,recall-weighted outreach trade-off,summary score weighting missed positive cases more heavily than extra referrals,supports model comparison but is not itself a student or workload count
+ECE,0.12664767977069408,score calibration,gap between score bands and observed target frequency,"if high, display as a risk score/rank rather than a literal withdrawal probability"
+False-positive workload,5.0,additional outreach demand,extra students referred beyond the Standard model,convert to staff-hours only with measured capacity; scenarios are labelled as scenarios

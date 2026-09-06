@@ -1,0 +1,5 @@
+model,operation,seconds,K,batch_n
+Standard TabPFN v2,cold_fit_setup,0.162709439,1,
+Standard TabPFN v2,warm_batch_prediction,0.328666423,1,85.0
+Balanced context K=1,cold_fit_setup,0.159617511,1,
+Balanced context K=1,warm_batch_prediction,0.42443908,1,85.0

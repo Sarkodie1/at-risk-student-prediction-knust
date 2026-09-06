@@ -1,0 +1,8 @@
+result,value,partition,source
+analytic_sample_n,421.0,full analytic sample,target_and_partition_counts.json
+positive_target_n,159.0,full analytic sample,target_and_partition_counts.json
+final_selected_k,1.0,development CV,k_ablation.csv
+standard_nested_oof_recall,0.4881889763779528,nested development OOF,oof_summary.csv
+btabpfn_nested_oof_recall,0.6771653543307087,nested development OOF,oof_summary.csv
+standard_test_recall,0.59375,held-out test,heldout_test_summary.csv
+btabpfn_test_recall,0.71875,held-out test,heldout_test_summary.csv

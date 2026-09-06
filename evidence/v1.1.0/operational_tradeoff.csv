@@ -1,0 +1,13 @@
+model,operating_point,threshold,students_referred,positive_target_students_detected,positive_target_students_missed,non_positive_students_referred,reviews_per_detected_positive,minutes_per_review_scenario,staff_hours_scenario,capacity_status
+Standard TabPFN v2,fixed_0.50,0.5,29,19,13,10,1.5263157895,15,7.25,scenario; actual KNUST counsellor capacity not measured
+Standard TabPFN v2,fixed_0.50,0.5,29,19,13,10,1.5263157895,30,14.5,scenario; actual KNUST counsellor capacity not measured
+Standard TabPFN v2,fixed_0.50,0.5,29,19,13,10,1.5263157895,60,29.0,scenario; actual KNUST counsellor capacity not measured
+Standard TabPFN v2,development_selected,0.12,76,31,1,45,2.4516129032,15,19.0,scenario; actual KNUST counsellor capacity not measured
+Standard TabPFN v2,development_selected,0.12,76,31,1,45,2.4516129032,30,38.0,scenario; actual KNUST counsellor capacity not measured
+Standard TabPFN v2,development_selected,0.12,76,31,1,45,2.4516129032,60,76.0,scenario; actual KNUST counsellor capacity not measured
+B-TabPFN K=1,fixed_0.50,0.5,38,23,9,15,1.652173913,15,9.5,scenario; actual KNUST counsellor capacity not measured
+B-TabPFN K=1,fixed_0.50,0.5,38,23,9,15,1.652173913,30,19.0,scenario; actual KNUST counsellor capacity not measured
+B-TabPFN K=1,fixed_0.50,0.5,38,23,9,15,1.652173913,60,38.0,scenario; actual KNUST counsellor capacity not measured
+B-TabPFN K=1,development_selected,0.26,66,29,3,37,2.275862069,15,16.5,scenario; actual KNUST counsellor capacity not measured
+B-TabPFN K=1,development_selected,0.26,66,29,3,37,2.275862069,30,33.0,scenario; actual KNUST counsellor capacity not measured
+B-TabPFN K=1,development_selected,0.26,66,29,3,37,2.275862069,60,66.0,scenario; actual KNUST counsellor capacity not measured

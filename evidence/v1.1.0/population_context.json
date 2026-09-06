@@ -1,0 +1,14 @@
+{
+  "status": "completed_with_qapo_2025_2026_undergraduate_reference",
+  "reference_year": "2025/2026",
+  "source": "KNUST Quality Assurance and Planning Office (QAPO)",
+  "population_total": 70268,
+  "gender_sample_denominator": 409,
+  "gender_not_comparable_n": 12,
+  "college_sample_denominator": 421,
+  "college_mapped_n": 414,
+  "college_unresolved_n": 7,
+  "q2_institutional_comparison_complete": true,
+  "interpretation": "Descriptive composition comparison. Voluntary non-probability recruitment does not establish institution-wide representativeness.",
+  "model_effect": "none"
+}

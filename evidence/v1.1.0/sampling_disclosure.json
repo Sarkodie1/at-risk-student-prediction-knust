@@ -1,0 +1,18 @@
+{
+  "design": "voluntary non-probability convenience sample",
+  "recruitment_channels": [
+    "in-person recruitment before lectures",
+    "visits to student halls and hostels",
+    "peer-distributed WhatsApp invitations"
+  ],
+  "accessible_frame": "KNUST students reached through the recorded in-person and online channels",
+  "invitation_denominator_status": "not tracked across all recruitment channels",
+  "response_rate_status": "not estimable",
+  "inference_boundary": "Results describe the surveyed cohort and are not institution-wide prevalence estimates.",
+  "limitations": [
+    "self-selection",
+    "possible non-response bias",
+    "single institution",
+    "single survey cohort"
+  ]
+}

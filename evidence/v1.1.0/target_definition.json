@@ -1,0 +1,21 @@
+{
+  "outcome_construct": "concurrent self-reported withdrawal consideration",
+  "exact_item_wording": "Q5  In the past three months, have you seriously considered withdrawing from KNUST or taking a break of one semester or more from your studies?",
+  "response_scale": [
+    "No",
+    "I have thought about it briefly but not seriously",
+    "Yes, I have seriously considered this"
+  ],
+  "response_counts_raw": {
+    "No": 263,
+    "I have thought about it briefly but not seriously": 103,
+    "Yes, I have seriously considered this": 56
+  },
+  "positive_rule": "brief consideration OR serious consideration",
+  "negative_rule": "No",
+  "not_claimed": [
+    "observed dropout",
+    "future withdrawal",
+    "clinical diagnosis"
+  ]
+}

@@ -1,0 +1,4 @@
+scale,items,complete_n,cronbach_alpha,inter_item_pearson_r,spearman_brown,interpretation
+PHQ-2,2,421,0.618780062,0.4479953744,0.6187801181,two-item screen; interpret with inter-item correlation and Spearman-Brown
+GAD-2,2,421,0.8099039464,0.6806311874,0.8099709115,two-item screen; interpret with inter-item correlation and Spearman-Brown
+Academic_Q1_Q3,3,408,0.4954762765,,,low internal consistency prohibits treating Q1-Q3 as a reliable latent scale

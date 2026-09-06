@@ -1,0 +1,15 @@
+feature,cohort,complete_n,missing_n,target_positive_when_complete,target_positive_when_missing,odds_ratio,p_value,method
+Q1_Academic_Performance,undergraduate_target_cohort,421,0,159,0,,,no_missing_values
+Q2_Attendance,undergraduate_target_cohort,421,0,159,0,,,no_missing_values
+Q3_Assignments,undergraduate_target_cohort,408,13,152,7,1.9649122807017543,0.25274033953340086,two_sided_fisher_exact
+Q4_Repeating,undergraduate_target_cohort,421,0,159,0,,,no_missing_values
+Q6_PHQ2_Interest,undergraduate_target_cohort,421,0,159,0,,,no_missing_values
+Q7_PHQ2_Depressed,undergraduate_target_cohort,421,0,159,0,,,no_missing_values
+Q8_GAD2_Nervous,undergraduate_target_cohort,421,0,159,0,,,no_missing_values
+Q9_GAD2_Worry,undergraduate_target_cohort,421,0,159,0,,,no_missing_values
+Q10_Financial_Difficulty,undergraduate_target_cohort,421,0,159,0,,,no_missing_values
+Q11_Internet_Access,undergraduate_target_cohort,421,0,159,0,,,no_missing_values
+Q12_Outside_Responsibilities,undergraduate_target_cohort,421,0,159,0,,,no_missing_values
+Q14_Year,undergraduate_target_cohort,421,0,159,0,,,no_missing_values
+Q16_Belonging,undergraduate_target_cohort,421,0,159,0,,,no_missing_values
+Q13_Faculty,undergraduate_target_cohort,421,0,159,0,,,no_missing_values

@@ -1,0 +1,6 @@
+{
+  "returncode": 1,
+  "stdout": "cuml-cu12 26.2.0 has requirement scikit-learn>=1.5, but you have scikit-learn 1.4.2.\ngradio 6.20.0 has requirement huggingface-hub<2.0,>=1.2.0, but you have huggingface-hub 0.36.2.\nhdbscan 0.8.44 has requirement scikit-learn>=1.6, but you have scikit-learn 1.4.2.\ntransformers 5.13.1 has requirement huggingface-hub<2.0,>=1.5.0, but you have huggingface-hub 0.36.2.\numap-learn 0.5.12 has requirement scikit-learn>=1.6, but you have scikit-learn 1.4.2.\n",
+  "stderr": "",
+  "interpretation": "Full Colab base-environment check; imported analysis packages are verified below."
+}

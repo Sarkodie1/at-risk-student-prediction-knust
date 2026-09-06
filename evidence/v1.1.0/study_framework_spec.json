@@ -1,0 +1,79 @@
+{
+  "figure": "Figure 01",
+  "title": "Study framework for concurrent student-support screening",
+  "boxes": [
+    {
+      "x": 0.035,
+      "y": 0.64,
+      "width": 0.2,
+      "height": 0.2,
+      "title": "Student-reported domains",
+      "lines": [
+        "Academic engagement",
+        "Psychological distress",
+        "Social and structural context"
+      ]
+    },
+    {
+      "x": 0.3,
+      "y": 0.64,
+      "width": 0.2,
+      "height": 0.2,
+      "title": "Concurrent screening target",
+      "lines": [
+        "Self-reported withdrawal",
+        "consideration during the",
+        "survey period"
+      ]
+    },
+    {
+      "x": 0.565,
+      "y": 0.64,
+      "width": 0.2,
+      "height": 0.2,
+      "title": "Model development",
+      "lines": [
+        "Standard TabPFN",
+        "B-TabPFN",
+        "Classical reference models"
+      ]
+    },
+    {
+      "x": 0.8,
+      "y": 0.64,
+      "width": 0.17,
+      "height": 0.2,
+      "title": "Evaluation domains",
+      "lines": [
+        "Discrimination",
+        "Calibration",
+        "Subgroup performance"
+      ]
+    },
+    {
+      "x": 0.2,
+      "y": 0.22,
+      "width": 0.24,
+      "height": 0.21,
+      "title": "Model interpretation",
+      "lines": [
+        "Feature importance",
+        "FSII attribution",
+        "Error analysis"
+      ]
+    },
+    {
+      "x": 0.56,
+      "y": 0.22,
+      "width": 0.24,
+      "height": 0.21,
+      "title": "Counsellor-facing output",
+      "lines": [
+        "Risk score and review flag",
+        "Transparent supporting factors",
+        "Human assessment and referral"
+      ]
+    }
+  ],
+  "principle": "Decision support supplements professional judgement and is not an automated clinical decision."
+}

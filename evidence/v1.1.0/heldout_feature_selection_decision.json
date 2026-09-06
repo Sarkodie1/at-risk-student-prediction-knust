@@ -1,0 +1,10 @@
+{
+  "features": [
+    "Q4_Repeating",
+    "Q6_PHQ2_Interest",
+    "Q7_PHQ2_Depressed",
+    "Q9_GAD2_Worry"
+  ],
+  "selection_data": "development_only",
+  "role": "secondary sensitivity; primary model retains all 14"
+}

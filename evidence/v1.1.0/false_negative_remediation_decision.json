@@ -1,0 +1,10 @@
+{
+  "false_negative_n": 9,
+  "true_positive_n": 23,
+  "decision_rule": "re-engineer only when an aggregate profile difference is stable, actionable and not explained solely by sparse subgroup counts",
+  "stable_numeric_contrasts": 3,
+  "holm_significant_categorical_contrasts": 0,
+  "decision_status": "aggregate_difference_detected_targeted_review_required_before_model_reengineering",
+  "interpretation": "At least one aggregate contrast remained after uncertainty or multiplicity control. Review the corresponding measurement and workflow issue before changing the model.",
+  "privacy": "no row-level mental-health profile is exported publicly"
+}

@@ -1,0 +1,89 @@
+{
+  "notebook_version": "6.13.0",
+  "protocol_hash": "29313c3ae78b30ae423f74d7730651224e950488d1aa84799770ad23a6b841ff",
+  "raw_data_sha256": "923ba210fb834b9bf064d174ad4e0e8d07e576e78b48b8a78b3116037363e313",
+  "outcome": "concurrent self-reported withdrawal consideration",
+  "not_claimed": [
+    "future dropout probability",
+    "clinical diagnosis",
+    "automated counselling decision"
+  ],
+  "feature_order": [
+    "Q1_Academic_Performance",
+    "Q2_Attendance",
+    "Q3_Assignments",
+    "Q4_Repeating",
+    "Q6_PHQ2_Interest",
+    "Q7_PHQ2_Depressed",
+    "Q8_GAD2_Nervous",
+    "Q9_GAD2_Worry",
+    "Q10_Financial_Difficulty",
+    "Q11_Internet_Access",
+    "Q12_Outside_Responsibilities",
+    "Q14_Year",
+    "Q16_Belonging",
+    "Q13_Faculty"
+  ],
+  "numeric_features": [
+    "Q1_Academic_Performance",
+    "Q2_Attendance",
+    "Q3_Assignments",
+    "Q4_Repeating",
+    "Q6_PHQ2_Interest",
+    "Q7_PHQ2_Depressed",
+    "Q8_GAD2_Nervous",
+    "Q9_GAD2_Worry",
+    "Q10_Financial_Difficulty",
+    "Q11_Internet_Access",
+    "Q12_Outside_Responsibilities",
+    "Q14_Year",
+    "Q16_Belonging"
+  ],
+  "nominal_features": [
+    "Q13_Faculty"
+  ],
+  "numeric_training_medians": {
+    "Q1_Academic_Performance": 3.0,
+    "Q2_Attendance": 3.0,
+    "Q3_Assignments": 3.0,
+    "Q4_Repeating": 0.0,
+    "Q6_PHQ2_Interest": 1.0,
+    "Q7_PHQ2_Depressed": 1.0,
+    "Q8_GAD2_Nervous": 1.0,
+    "Q9_GAD2_Worry": 1.0,
+    "Q10_Financial_Difficulty": 1.0,
+    "Q11_Internet_Access": 2.0,
+    "Q12_Outside_Responsibilities": 0.0,
+    "Q14_Year": 2.0,
+    "Q16_Belonging": 3.0
+  },
+  "faculty_imputation_value": "College of Science",
+  "faculty_categories": [
+    "College of Agriculture and Natural Resources",
+    "College of Art and Built Environment",
+    "College of Engineering",
+    "College of Health Sciences",
+    "College of Humanities and Social Sciences",
+    "College of Science",
+    "Unresolved Other"
+  ],
+  "unknown_faculty_code": -1,
+  "model_family": "B-TabPFN",
+  "selected_k": 1,
+  "context_sampling": "without replacement",
+  "target_minority_prevalence": 0.5,
+  "primary_threshold": 0.5,
+  "calibrated_secondary_threshold": 0.5,
+  "calibration_analysis_role": "secondary diagnostic; not automatically adopted for deployment",
+  "calibration_development_status": "diagnostic_only_overlapping_base_model_training_sets",
+  "calibration_automatic_adoption": false,
+  "score_language": "risk score; calibrated values remain a secondary diagnostic unless separately approved",
+  "required_human_action": "counsellor reviews the score and supporting factors before outreach or referral",
+  "fail_closed_rules": [
+    "no placeholder score",
+    "no hard-coded interaction narrative",
+    "no sensitive-response logging",
+    "no credential in client code"
+  ],
+  "dashboard_status": "integration_not_evaluated_in_this_notebook"
+}

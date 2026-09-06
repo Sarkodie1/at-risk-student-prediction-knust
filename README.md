@@ -1,181 +1,89 @@
-# Explainable At-Risk Student Prediction at KNUST
-### Balanced Context Sampling for TabPFN v2 with FSII Explainability
+# B-TabPFN for student-support screening at KNUST
 
-[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-310/)
-[![TabPFN v2](https://img.shields.io/badge/TabPFN-v2.0.0-orange.svg)](https://github.com/PriorLabs/TabPFN)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21709993.svg)](https://doi.org/10.5281/zenodo.21709993)
+This repository contains the executed analysis notebook and public verification evidence for:
 
-> **Paper:** *"Explainable At-Risk Student Prediction at KNUST: Integrating Academic Behaviour, Mental Health, and Ghana-Specific Contextual Barriers Using TabPFN v2 and Shapley Interaction Values"*
-> — Under review, British Journal of Educational Technology (BJET)
+**Balanced Context Sampling for TabPFN v2: Recovering Minority-Class Recall in Explainable At-Risk Student Prediction at KNUST Using Ghana-Specific Mental Health and Structural Barrier Features**
 
----
+Repository release **v1.1.0** corresponds to submission revision **6.13.2** and computational protocol **6.13.0**. It supersedes the v1.0.1/v5.3 results narrative.
 
-## Overview
+## Study scope
 
-Early warning systems (EWS) in Higher Education struggle to capture how academic performance, mental health symptoms, and Ghana-specific structural barriers **compound** to drive student withdrawal risk. This study addresses three gaps:
+The KNUST study is a cross-sectional, concurrent screening analysis. Its target is students' self-reported consideration of withdrawal or a semester break during the survey period. It does not measure observed future dropout, make a clinical diagnosis, or justify automated counselling decisions.
 
-| Contribution | Description | Key Result |
-|---|---|---|
-| **B-TabPFN** | Balanced Context Sampling module for TabPFN v2 inference-time recall recovery | Recall: 0.504 → **0.709** (OOF CV); 0.563 → **0.781** (held-out) |
-| **FSII Explainability** | Faithful Shapley Interaction Index reveals sub/super-additive risk interactions | Depressed Mood × Uncontrolled Worry: **sub-additive dampening** (undetectable by SHAP) |
-| **External Validation** | UCI Student Dropout benchmark (N=4,424) out-of-distribution robustness | B-TabPFN Recall: **0.825 ± 0.020** — highest among all models |
+The survey received 422 responses. One postgraduate response was excluded from the undergraduate primary analysis, leaving 421 records: 159 positive-target responses (37.8%) and 262 negative-target responses. A fixed stratified split assigned 336 records to development and 85 to a held-out secondary evaluation.
 
-**Ethics:** Raw KNUST data collected under HuSSREC/AP/544/VOL.5. Public replication uses synthetic data.
+Recruitment was voluntary and non-probability-based. The QAPO comparison describes differences between the achieved sample composition and the 2025/2026 registered undergraduate population; it does not establish representativeness or an institution-wide prevalence estimate.
 
----
+## Proposed method
 
-## Repository Structure
+B-TabPFN changes the labelled inference context supplied to a frozen TabPFN v2 model. It retains all available minority-class development observations and samples an equal number of majority-class observations without replacement. Pretrained weights and query observations are unchanged.
 
-```
-at-risk-student-prediction-knust/
-│
-├── notebooks/
-│   └── replication_notebook.ipynb   # All results, tables & figures (outputs cleared)
-│                                    # Set USE_RAW_DATA = False → runs on synthetic data
-│
-├── modules/
-│   └── balanced_sampler.py          # Standalone B-TabPFN module (plug-in for any TabPFN workflow)
-│
-├── data/
-│   ├── synthetic_knust_data.csv     # Synthetic N=422 student dataset for public replication
-│   └── KNUST_Survey_Schema.md       # Feature codebook: Tinto constructs, scales, descriptives
-│
-├── requirements.txt                 # Python dependencies (pip install -r requirements.txt)
-├── .gitignore                       # Excludes raw data, API keys, large outputs
-└── README.md                        # This file
-```
+Candidate context counts, K = 1, 5, 10, 15 and 20, were evaluated using development data. The declared one-standard-error rule selected the smallest eligible model, **K=1**. K=15 had the highest mean development F2 and is retained as sensitivity evidence rather than substituted after inspection of the held-out outcomes.
 
----
+## Principal results
 
-## Quick Start
+At the fixed 0.50 operating threshold:
 
-```bash
-# 1. Clone
-git clone https://github.com/Sarkodie1/at-risk-student-prediction-knust.git
-cd at-risk-student-prediction-knust
+| Evaluation | Model | Precision | Recall | F1 | F2 | AUROC | Average precision |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Nested development OOF (pooled) | Standard TabPFN v2 | 0.639 | 0.488 | 0.554 | 0.512 | 0.753 | 0.639 |
+| Nested development OOF (pooled) | B-TabPFN | 0.585 | 0.677 | 0.628 | 0.656 | 0.752 | 0.644 |
+| Held-out secondary evaluation | Standard TabPFN v2 | 0.655 | 0.594 | 0.623 | 0.605 | 0.746 | 0.654 |
+| Held-out secondary evaluation | B-TabPFN K=1 | 0.605 | 0.719 | 0.657 | 0.693 | 0.743 | 0.618 |
 
-# 2. Create environment (Python 3.10 recommended)
-conda create -n at_risk_ews python=3.10 -y
-conda activate at_risk_ews
+The Nadeau-Bengio corrected mean outer-fold recall difference was 0.188 (95% CI 0.095 to 0.282; two-sided p=0.0014). The exact held-out McNemar comparison between B-TabPFN and standard TabPFN at 0.50 was not statistically significant (p=1.000). These results support a recall-oriented screening trade-off in this surveyed cohort, not a claim of universally superior discrimination.
 
-# 3. Install dependencies
-pip install -r requirements.txt
+Primary FSII summaries cover the 32 positive-target students in the held-out partition, use a budget of 1024, and explain the exact final K=1 positive-class score. The UCI experiment is a separate algorithmic robustness benchmark with a different outcome construct; it is not external validation of the KNUST screening instrument.
 
-# 4. Run notebook (uses synthetic data by default)
-jupyter notebook notebooks/replication_notebook.ipynb
+## Repository contents
+
+```text
+notebooks/
+  knust_btabpfn_analysis.ipynb   executed authoritative notebook
+modules/
+  balanced_context.py           reusable context-construction helper
+evidence/v1.1.0/
+  aggregate tables, diagnostics, manifests and publication figures
+requirements.txt                explicit packages installed by the notebook
+RELEASE_NOTES.md                release-to-protocol mapping and migration notes
 ```
 
----
+The concise notebook filename is stable across future releases. Version identity is recorded by the Git tag and by `evidence/v1.1.0/submission_release.json`.
 
-## Using B-TabPFN in Your Own Project
+## Reproduction and verification
 
-The `BalancedContextSampler` is a drop-in wrapper for any TabPFN v2 workflow:
+The executed notebook preserves displayed outputs. Exact rerunning requires:
 
-```python
-from tabpfn import TabPFNClassifier
-from modules.balanced_sampler import BalancedContextSampler
+- a Colab 2026.07 Python 3.12 GPU runtime;
+- the restricted row-level KNUST CSV;
+- the protocol-bound private FSII checkpoints for a submission rerun; and
+- a TabPFN credential supplied through a Colab Secret named `TABPFN_TOKEN`.
 
-# Standard TabPFN v2 setup
-base_clf = TabPFNClassifier(device='cpu')
+The credential, raw survey, row-level predictions and private checkpoints must never be committed. The notebook verifies the raw-data hash, partitions, modelling code, current model probabilities, checkpoint protocol, interaction completeness and reconstruction error before accepting saved FSII work.
 
-# Wrap with Balanced Context Sampling (K=20 bootstrap passes, seeds 42+k)
-btabpfn = BalancedContextSampler(base_clf=base_clf, n_iter=20, random_state=42)
+The public evidence package permits review of aggregate results without exposing sensitive student-level data. Start with:
 
-# Fit and predict (same API as scikit-learn)
-btabpfn.fit(X_train, y_train)
-probabilities = btabpfn.predict_proba(X_test)   # risk scores for counsellor triage
-predictions   = btabpfn.predict(X_test, threshold=0.50)
-```
+- [`results_manifest.json`](evidence/v1.1.0/results_manifest.json) for the authoritative run identity and completion state;
+- [`claims_evidence_source.csv`](evidence/v1.1.0/claims_evidence_source.csv) for claim-to-artifact traceability;
+- [`decision_provenance_register.csv`](evidence/v1.1.0/decision_provenance_register.csv) for analysis decisions;
+- [`run_status_dashboard.csv`](evidence/v1.1.0/run_status_dashboard.csv) for component completion;
+- [`warning_summary.csv`](evidence/v1.1.0/warning_summary.csv) for classified compatibility notices; and
+- [`artifact_manifest.csv`](evidence/v1.1.0/artifact_manifest.csv) for artifact hashes.
 
-**How it works:** Forces a 1:1 class ratio in each of K in-context attention windows, preventing majority-class dominance from collapsing minority-class recall — without modifying TabPFN's pre-trained weights.
+The full Colab base image reports conflicts involving unused preinstalled packages. The imported analysis stack is separately version-checked and functionally tested in the notebook; see `pip_check.json`, `resolved_analysis_versions.json` and `tabpfn_integration_probe.json`.
 
----
+## Data governance and ethics
 
-## Key Results (KNUST Dataset, N=422)
+Ethics approval reference: **HuSSREC/AP/544/VOL.5**.
 
-### 10-Fold Out-of-Fold Cross-Validation (X_train, N=337)
+Only aggregate or disclosure-controlled evidence is public. The repository does not contain the raw KNUST survey, the ethics letter, the QAPO source form, private FSII checkpoints or row-level model outputs. Requests for restricted data require separate ethical and institutional authorization.
 
-| Model | AUC-ROC | Recall | F2 | Brier |
-|---|---|---|---|---|
-| Standard TabPFN v2 | 0.755 ± 0.089 | 0.504 | 0.528 | 0.189 |
-| **Proposed B-TabPFN** | **0.755 ± 0.089** | **0.709** | **0.683** | 0.199 |
-| Logistic Regression | 0.745 ± 0.044 | 0.603 | 0.605 | 0.203 |
-| Naive Bayes | 0.773 ± 0.054 | 0.594 | 0.597 | 0.229 |
-| XGBoost | 0.660 ± 0.054 | 0.522 | 0.530 | 0.263 |
+## Archive
 
-**Wilcoxon signed-rank test:** W = 0.0 (T⁺ = 55, T⁻ = 0), p = 0.0020, Cohen's d_z = 2.0606, r = 1.000 — B-TabPFN exceeded Standard TabPFN v2 in **all 10 of 10 folds**.
+Latest archived version: [Zenodo concept DOI 10.5281/zenodo.21709992](https://doi.org/10.5281/zenodo.21709992).
 
-### Held-Out Test Set (X_test, N=85, t=0.50)
+The concept DOI resolves to the latest Zenodo version. A version-specific DOI for v1.1.0 should be added to the GitHub release after the new Zenodo deposit is published.
 
-| Model | AUC-ROC | Recall | FN count |
-|---|---|---|---|
-| Standard TabPFN v2 | 0.733 | 0.563 (18/32) | **14 missed** |
-| **Proposed B-TabPFN** | **0.734** | **0.781 (25/32)** | **7 missed** |
+## Software notice
 
-7 additional at-risk students identified for counsellor follow-up.
-
----
-
-## Replication Modes
-
-| Mode | Setting | Data | Output |
-|---|---|---|---|
-| **Public replication** | `USE_RAW_DATA = False` | `synthetic_knust_data.csv` | All code runs; metrics will differ slightly |
-| **Exact paper results** | `USE_RAW_DATA = True` | Real KNUST survey (restricted) | Exact figures and tables from paper |
-
-To request the restricted dataset: contact the corresponding author subject to HuSSREC/AP/544/VOL.5 approval.
-
----
-
-## Ethics & Data Privacy
-
-The raw student survey dataset contains sensitive profiles (mental health indicators, financial difficulty, withdrawal intention) collected under:
-- **Ethics approval:** KNUST Humanities and Social Sciences Research Ethics Committee — Reference **HuSSREC/AP/544/VOL.5**
-- **Consent:** Written informed consent obtained from all 422 participants
-- **Anonymisation:** No PII collected; k-anonymity (k ≥ 5) confirmed for all demographic combinations
-- **Governance:** Ghana Data Protection Act (Act 843, 2012)
-
-The raw dataset **is not publicly released**. This repository provides a `synthetic_knust_data.csv` for code verification. Researchers seeking access to the restricted dataset should apply to the corresponding author.
-
----
-
-## Citation
-
-If you use this code or the B-TabPFN module, please cite:
-
-```bibtex
-@article{sarkodie2025btabpfn,
-  title   = {Explainable At-Risk Student Prediction at KNUST: Integrating Academic
-             Behaviour, Mental Health, and Ghana-Specific Contextual Barriers Using
-             TabPFN v2 and Shapley Interaction Values},
-  author  = {Sarkodie-Addo, Justice Junior and others},
-  journal = {British Journal of Educational Technology},
-  year    = {2025},
-  note    = {Under review. Code: https://github.com/Sarkodie1/at-risk-student-prediction-knust.
-             DOI: 10.5281/zenodo.21709993}
-}
-```
-
----
-
-## Requirements
-
-See [`requirements.txt`](requirements.txt). Key packages:
-
-| Package | Version |
-|---|---|
-| tabpfn | 2.0.0 |
-| shapiq | 1.1 |
-| scikit-learn | 1.4.0 |
-| xgboost | 2.0.0 |
-| pandas | 2.0.3 |
-| numpy | 1.24.3 |
-| matplotlib | 3.7.2 |
-| statsmodels | 0.14.0 |
-
----
-
-## License
-
-This repository is released under the [MIT License](LICENSE). The pre-trained TabPFN v2 weights are subject to the [Prior Labs terms of use](https://github.com/PriorLabs/TabPFN).
+No repository-wide software licence is asserted by this release. TabPFN code and pretrained weights remain subject to their respective upstream terms.
