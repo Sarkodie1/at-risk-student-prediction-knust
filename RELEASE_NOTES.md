@@ -27,7 +27,7 @@ The v1.1.0 state remains available through its Git tag, version-specific DOI and
 
 ### Archive
 
-- Version-specific DOI: pending publication
+- Version-specific DOI: `10.5281/zenodo.22657401`
 - Concept DOI for the latest version: `10.5281/zenodo.21709992`
 
 ## v1.1.0 — authoritative submission revision 6.13.2

@@ -81,7 +81,7 @@ Only aggregate or disclosure-controlled evidence is public. The repository does 
 
 ## Archive
 
-- Version-specific v1.1.1 archive: **pending publication of this release on Zenodo**
+- Version-specific v1.1.1 archive: [DOI 10.5281/zenodo.22657401](https://doi.org/10.5281/zenodo.22657401)
 - Pre-closeout v1.1.0 archive: [DOI 10.5281/zenodo.22479886](https://doi.org/10.5281/zenodo.22479886)
 - Latest-version archive: [Zenodo concept DOI 10.5281/zenodo.21709992](https://doi.org/10.5281/zenodo.21709992)
 
