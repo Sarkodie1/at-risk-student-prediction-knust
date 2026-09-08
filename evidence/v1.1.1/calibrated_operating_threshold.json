@@ -1,0 +1,9 @@
+{
+  "threshold": 0.5,
+  "selection_data": "none; fixed neutral threshold",
+  "selection_metric": null,
+  "selection_rule": "fixed 0.50 for secondary isotonic evaluation",
+  "development_calibration_status": "diagnostic_only_overlapping_base_model_training_sets",
+  "analysis_role": "secondary held-out diagnostic",
+  "automatic_deployment_adoption": false
+}

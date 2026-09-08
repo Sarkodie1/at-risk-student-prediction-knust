@@ -1,0 +1,8 @@
+model,candidates,outer_folds,inner_folds,total_evaluations
+Gaussian Naive Bayes,5,10,5,250
+KNN,5,10,5,250
+Logistic Regression,5,10,5,250
+Random Forest,5,10,5,250
+XGBoost,5,10,5,250
+B-TabPFN (K selection),5,10,5,250
+Standard TabPFN v2,0,10,0,0

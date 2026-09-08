@@ -1,0 +1,4 @@
+score_quantile,target_quantile_score,selected_development_oof_score,selection_partition,selection_purpose
+0.2,0.39436535239219667,0.3935546875,development OOF only,approximation convergence only; no predictive decision
+0.5,0.607570230960846,0.607570230960846,development OOF only,approximation convergence only; no predictive decision
+0.8,0.7937500000000002,0.7958984375,development OOF only,approximation convergence only; no predictive decision

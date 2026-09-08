@@ -1,0 +1,19 @@
+{
+  "source": "KNUST Quality Assurance and Planning Office (QAPO)",
+  "source_document": "QAPO-completed Undergraduate Enrollment Data Request Form",
+  "request_date": "2026-09-03",
+  "academic_year": "2025/2026",
+  "population_scope": "registered undergraduate students",
+  "official_overall_total": 70268,
+  "official_female_total": 31184,
+  "official_male_total": 39084,
+  "arithmetic_reconciliation": {
+    "college": "College of Humanities and Social Sciences",
+    "source_form_written_total": 18882,
+    "component_derived_total_used": 18822,
+    "female_component": 9781,
+    "male_component": 9041,
+    "reason": "The component-derived total reconciles with the official gender totals and overall total."
+  },
+  "analysis_role": "descriptive institutional composition benchmark; not a sampling weight or model input"
+}

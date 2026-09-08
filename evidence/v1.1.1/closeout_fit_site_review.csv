@@ -1,0 +1,8 @@
+source_site,classification,evaluation_data_used_to_fit_predictive_model,basis
+common_method_diagnostic: StandardScaler.fit_transform(matrix),descriptive_diagnostic_only,False,Harman diagnostic output does not feed any predictive model
+common_method_diagnostic: PCA.fit(standardized),descriptive_diagnostic_only,False,Harman diagnostic output does not feed any predictive model
+ContextEnsemble.iter_fitted_members: model.fit(context),training_context_only,False,context arrays are supplied from the current training fold or locked development partition
+ExactProbabilityContextModel.fit: model.fit(X[context]),locked_development_context_only,False,wrapper rejects labels outside the locked development context and reproduces the frozen final prediction function
+secondary_outcome: serious_prep.fit_transform(X_serious_train),training_partition_only,False,preprocessor is fitted on train_pos and transforms test_pos
+secondary_outcome: serious_standard.fit(X_serious_train),training_partition_only,False,model receives only the transformed training partition
+secondary_outcome: serious_balanced.fit(X_serious_train),training_partition_only,False,balanced context is constructed only from the training partition

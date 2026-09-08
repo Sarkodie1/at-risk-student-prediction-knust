@@ -1,0 +1,7 @@
+candidate_cause,development_evidence,interpretation_rule,heldout_used_for_model_selection,interpretation_scope
+standard_threshold_too_high,0.4881889764,positive values show recoverable coverage from a training-selected threshold,False,development-based diagnostic; held-out evidence is descriptive
+uncalibrated_balanced_score,-0.0015881886,negative values show descriptive Brier improvement after partitioned development recalibration; overlapping base-model training sets limit inference,False,development-based diagnostic; held-out evidence is descriptive
+class_prevalence_balance,0.2125641026,balanced minus size-matched-natural recall isolates prevalence composition,False,development-based diagnostic; held-out evidence is descriptive
+context_size_reduction,-0.0211538462,size-matched-natural minus full-natural recall isolates context-size reduction,False,development-based diagnostic; held-out evidence is descriptive
+repeated_context_averaging,-0.0041025641,balanced Kmax minus balanced K1 recall isolates repeated averaging,False,development-based diagnostic; held-out evidence is descriptive
+missingness_dependence,0.0,"count of prespecified distress-item missingness tests below 0.05; descriptive, no multiplicity claim",False,development-based diagnostic; held-out evidence is descriptive

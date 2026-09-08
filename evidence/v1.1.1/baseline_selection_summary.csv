@@ -1,0 +1,17 @@
+model,candidate_id,selected_parameters_json,selected_outer_folds,mean_inner_f2
+Gaussian Naive Bayes,5,"{""var_smoothing"": 1e-07}",7,0.7568626280320497
+Gaussian Naive Bayes,1,"{""var_smoothing"": 1e-11}",2,0.7575975672311734
+Gaussian Naive Bayes,2,"{""var_smoothing"": 1e-10}",1,0.7584807256235828
+KNN,1,"{""n_neighbors"": 3, ""weights"": ""uniform""}",9,0.5031062366652347
+KNN,4,"{""n_neighbors"": 5, ""weights"": ""distance""}",1,0.5308105167918252
+Logistic Regression,1,"{""C"": 0.01}",4,0.6371032444194997
+Logistic Regression,2,"{""C"": 0.1}",2,0.6439614805597231
+Logistic Regression,3,"{""C"": 1.0}",2,0.6347118593981756
+Logistic Regression,4,"{""C"": 10.0}",2,0.6298014023573378
+Random Forest,4,"{""max_depth"": 5, ""min_samples_leaf"": 3}",8,0.5989689771689007
+Random Forest,2,"{""max_depth"": null, ""min_samples_leaf"": 3}",1,0.6207305685716136
+Random Forest,3,"{""max_depth"": 5, ""min_samples_leaf"": 1}",1,0.5651391488491833
+XGBoost,1,"{""learning_rate"": 0.05, ""max_depth"": 3, ""n_estimators"": 300}",4,0.5914381547811932
+XGBoost,2,"{""learning_rate"": 0.05, ""max_depth"": 4, ""n_estimators"": 300}",4,0.5747598077792594
+XGBoost,4,"{""learning_rate"": 0.1, ""max_depth"": 3, ""n_estimators"": 200}",1,0.6050022744181922
+XGBoost,3,"{""learning_rate"": 0.05, ""max_depth"": 6, ""n_estimators"": 300}",1,0.5977895594923621

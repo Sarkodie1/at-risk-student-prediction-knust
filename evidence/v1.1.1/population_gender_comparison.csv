@@ -1,0 +1,3 @@
+gender,population_n,sample_n,sample_comparable_denominator,population_denominator,sample_percent,population_percent,percentage_point_difference,source,academic_year,interpretation
+Female,31184,201,409,70268,49.1442542787,44.3786645415,4.7655897373,KNUST Quality Assurance and Planning Office (QAPO),2025/2026,descriptive composition difference; no representativeness inference
+Male,39084,208,409,70268,50.8557457213,55.6213354585,-4.7655897373,KNUST Quality Assurance and Planning Office (QAPO),2025/2026,descriptive composition difference; no representativeness inference

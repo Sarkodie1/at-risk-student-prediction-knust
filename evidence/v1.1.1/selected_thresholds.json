@@ -1,0 +1,7 @@
+{
+  "selection_partition": "training_oof",
+  "selection_metric": "F2",
+  "standard_tabpfn": 0.12,
+  "btabpfn_secondary": 0.26,
+  "primary_btabpfn_threshold": 0.5
+}

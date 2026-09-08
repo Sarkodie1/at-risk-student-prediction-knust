@@ -1,0 +1,8 @@
+{
+  "numbered_items": 16,
+  "predictor_items": 14,
+  "primary_outcome_item": "Q5",
+  "fairness_only_item": "Q15 gender",
+  "conditional_follow_up_field": "Other Faculty free-text specification",
+  "conditional_follow_up_is_numbered_item": false
+}

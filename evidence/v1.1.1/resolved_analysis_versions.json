@@ -1,0 +1,9 @@
+{
+  "tabpfn": "2.2.1",
+  "shapiq": "1.4.1",
+  "xgboost": "2.0.3",
+  "statsmodels": "0.14.6",
+  "scikit-learn": "1.4.2",
+  "pyarrow": "17.0.0",
+  "ucimlrepo": "0.0.7"
+}

@@ -1,0 +1,15 @@
+feature,mean_importance,mean_positive_share,retention_folds,threshold,diagnostic_above_5pct_share,retained,retention_basis
+Q9_GAD2_Worry,0.07161734027656048,0.143861208539742,9,0.05,True,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q7_PHQ2_Depressed,0.08768733948951932,0.1339152212584408,8,0.05,True,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q6_PHQ2_Interest,0.05208905338532421,0.11365702147469947,8,0.05,True,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q4_Repeating,0.05515849325610407,0.09001915801544425,4,0.05,True,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q12_Outside_Responsibilities,0.03921619524090688,0.08475883073196351,7,0.05,True,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q3_Assignments,0.041477830920491565,0.06967579260756392,4,0.05,True,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q16_Belonging,0.03317442026972985,0.06452982791291301,4,0.05,True,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q11_Internet_Access,0.03091739360536474,0.06345944828489555,6,0.05,True,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q13_Faculty,0.025591597363666563,0.052462582786970455,5,0.05,True,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q10_Financial_Difficulty,0.013798997639323806,0.04899974849873996,5,0.05,False,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q2_Attendance,0.023427857060900864,0.04708406974802736,4,0.05,False,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q8_GAD2_Nervous,0.011303189126405756,0.03372540759414233,2,0.05,False,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q14_Year,0.007218205211127371,0.03138558790474592,3,0.05,False,True,all 14 predictors prespecified; permutation importance is diagnostic only
+Q1_Academic_Performance,-0.0018397330039634486,0.022466094641711464,3,0.05,False,True,all 14 predictors prespecified; permutation importance is diagnostic only

@@ -1,0 +1,6 @@
+{
+  "reliable_respondent_identifier_available": false,
+  "exact_duplicate_rows_including_timestamp": 0,
+  "rows_sharing_a_response_pattern_excluding_timestamp": 0,
+  "analytic_treatment": "No response was excluded solely because another anonymous response had the same answer pattern."
+}

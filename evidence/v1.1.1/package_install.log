@@ -1,0 +1,186 @@
+COMMAND: /usr/bin/python3 -m pip install --only-binary=:all: --upgrade-strategy only-if-needed setuptools<82 requests==2.32.4 jedi>=0.16 tabpfn==2.2.1 shapiq==1.4.1 xgboost==2.0.3 statsmodels==0.14.6 scikit-learn==1.4.2 pyarrow==17.0.0 ucimlrepo==0.0.7
+
+STDOUT
+Requirement already satisfied: setuptools<82 in /usr/local/lib/python3.12/dist-packages (75.2.0)
+Requirement already satisfied: requests==2.32.4 in /usr/local/lib/python3.12/dist-packages (2.32.4)
+Collecting jedi>=0.16
+  Downloading jedi-0.20.0-py2.py3-none-any.whl.metadata (23 kB)
+Collecting tabpfn==2.2.1
+  Downloading tabpfn-2.2.1-py3-none-any.whl.metadata (29 kB)
+Collecting shapiq==1.4.1
+  Downloading shapiq-1.4.1-py3-none-any.whl.metadata (39 kB)
+Collecting xgboost==2.0.3
+  Downloading xgboost-2.0.3-py3-none-manylinux2014_x86_64.whl.metadata (2.0 kB)
+Requirement already satisfied: statsmodels==0.14.6 in /usr/local/lib/python3.12/dist-packages (0.14.6)
+Collecting scikit-learn==1.4.2
+  Downloading scikit_learn-1.4.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting pyarrow==17.0.0
+  Downloading pyarrow-17.0.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Collecting ucimlrepo==0.0.7
+  Downloading ucimlrepo-0.0.7-py3-none-any.whl.metadata (5.5 kB)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests==2.32.4) (3.4.9)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.12/dist-packages (from requests==2.32.4) (3.18)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests==2.32.4) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.12/dist-packages (from requests==2.32.4) (2026.6.17)
+Requirement already satisfied: torch<3,>=2.1 in /usr/local/lib/python3.12/dist-packages (from tabpfn==2.2.1) (2.11.0+cu128)
+Requirement already satisfied: typing_extensions>=4.12.0 in /usr/local/lib/python3.12/dist-packages (from tabpfn==2.2.1) (4.16.0)
+Requirement already satisfied: scipy<2,>=1.11.1 in /usr/local/lib/python3.12/dist-packages (from tabpfn==2.2.1) (1.16.3)
+Requirement already satisfied: pandas<3,>=1.4.0 in /usr/local/lib/python3.12/dist-packages (from tabpfn==2.2.1) (2.2.2)
+Requirement already satisfied: einops<0.9,>=0.2.0 in /usr/local/lib/python3.12/dist-packages (from tabpfn==2.2.1) (0.8.2)
+Collecting huggingface-hub<1,>=0.0.1 (from tabpfn==2.2.1)
+  Downloading huggingface_hub-0.36.2-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: pydantic>=2.8.0 in /usr/local/lib/python3.12/dist-packages (from tabpfn==2.2.1) (2.13.4)
+Collecting pydantic-settings>=2.10.1 (from tabpfn==2.2.1)
+  Downloading pydantic_settings-2.15.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting eval-type-backport>=0.2.2 (from tabpfn==2.2.1)
+  Downloading eval_type_backport-0.4.0-py3-none-any.whl.metadata (3.1 kB)
+Requirement already satisfied: joblib>=1.2.0 in /usr/local/lib/python3.12/dist-packages (from tabpfn==2.2.1) (1.5.3)
+Collecting tabpfn-common-utils>=0.1.8 (from tabpfn-common-utils[telemetry-interactive]>=0.1.8->tabpfn==2.2.1)
+  Downloading tabpfn_common_utils-0.2.23-py3-none-any.whl.metadata (17 kB)
+Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (from shapiq==1.4.1) (2.0.2)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.12/dist-packages (from shapiq==1.4.1) (4.67.3)
+Collecting sparse-transform (from shapiq==1.4.1)
+  Downloading sparse_transform-0.2.1-py3-none-any.whl.metadata (759 bytes)
+Collecting galois (from shapiq==1.4.1)
+  Downloading galois-0.4.11-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: matplotlib in /usr/local/lib/python3.12/dist-packages (from shapiq==1.4.1) (3.10.0)
+Requirement already satisfied: networkx in /usr/local/lib/python3.12/dist-packages (from shapiq==1.4.1) (3.6.1)
+Collecting colour (from shapiq==1.4.1)
+  Downloading colour-0.1.5-py2.py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: pillow in /usr/local/lib/python3.12/dist-packages (from shapiq==1.4.1) (11.3.0)
+Requirement already satisfied: patsy>=0.5.6 in /usr/local/lib/python3.12/dist-packages (from statsmodels==0.14.6) (1.0.2)
+Requirement already satisfied: packaging>=21.3 in /usr/local/lib/python3.12/dist-packages (from statsmodels==0.14.6) (26.2)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /usr/local/lib/python3.12/dist-packages (from scikit-learn==1.4.2) (3.6.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.6 in /usr/local/lib/python3.12/dist-packages (from jedi>=0.16) (0.8.7)
+Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<1,>=0.0.1->tabpfn==2.2.1) (3.29.7)
+Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<1,>=0.0.1->tabpfn==2.2.1) (2025.3.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<1,>=0.0.1->tabpfn==2.2.1) (1.5.1)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<1,>=0.0.1->tabpfn==2.2.1) (6.0.3)
+Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.12/dist-packages (from pandas<3,>=1.4.0->tabpfn==2.2.1) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.12/dist-packages (from pandas<3,>=1.4.0->tabpfn==2.2.1) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.12/dist-packages (from pandas<3,>=1.4.0->tabpfn==2.2.1) (2026.3)
+Requirement already satisfied: annotated-types>=0.6.0 in /usr/local/lib/python3.12/dist-packages (from pydantic>=2.8.0->tabpfn==2.2.1) (0.7.0)
+Requirement already satisfied: pydantic-core==2.46.4 in /usr/local/lib/python3.12/dist-packages (from pydantic>=2.8.0->tabpfn==2.2.1) (2.46.4)
+Requirement already satisfied: typing-inspection>=0.4.2 in /usr/local/lib/python3.12/dist-packages (from pydantic>=2.8.0->tabpfn==2.2.1) (0.4.2)
+Requirement already satisfied: python-dotenv>=0.21.0 in /usr/local/lib/python3.12/dist-packages (from pydantic-settings>=2.10.1->tabpfn==2.2.1) (1.2.2)
+Requirement already satisfied: nvidia-ml-py>=13.590.48 in /usr/local/lib/python3.12/dist-packages (from tabpfn-common-utils>=0.1.8->tabpfn-common-utils[telemetry-interactive]>=0.1.8->tabpfn==2.2.1) (13.610.43)
+Requirement already satisfied: platformdirs>=4 in /usr/local/lib/python3.12/dist-packages (from tabpfn-common-utils>=0.1.8->tabpfn-common-utils[telemetry-interactive]>=0.1.8->tabpfn==2.2.1) (4.10.0)
+Collecting posthog>=6.7 (from tabpfn-common-utils>=0.1.8->tabpfn-common-utils[telemetry-interactive]>=0.1.8->tabpfn==2.2.1)
+  Downloading posthog-7.47.1-py3-none-any.whl.metadata (5.5 kB)
+INFO: pip is looking at multiple versions of tabpfn-common-utils to determine which version is compatible with other requirements. This could take a while.
+Collecting tabpfn-common-utils>=0.1.8 (from tabpfn-common-utils[telemetry-interactive]>=0.1.8->tabpfn==2.2.1)
+  Downloading tabpfn_common_utils-0.2.21-py3-none-any.whl.metadata (17 kB)
+  Downloading tabpfn_common_utils-0.2.20-py3-none-any.whl.metadata (5.0 kB)
+  Downloading tabpfn_common_utils-0.2.19-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.18-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.17-py3-none-any.whl.metadata (5.4 kB)
+Collecting posthog~=6.7 (from tabpfn-common-utils>=0.1.8->tabpfn-common-utils[telemetry-interactive]>=0.1.8->tabpfn==2.2.1)
+  Downloading posthog-6.9.3-py3-none-any.whl.metadata (6.0 kB)
+Collecting tabpfn-common-utils>=0.1.8 (from tabpfn-common-utils[telemetry-interactive]>=0.1.8->tabpfn==2.2.1)
+  Downloading tabpfn_common_utils-0.2.16-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.15-py3-none-any.whl.metadata (5.4 kB)
+INFO: pip is still looking at multiple versions of tabpfn-common-utils to determine which version is compatible with other requirements. This could take a while.
+  Downloading tabpfn_common_utils-0.2.14-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.13-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.12-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.10-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.9-py3-none-any.whl.metadata (5.4 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+  Downloading tabpfn_common_utils-0.2.8-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.7-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.6-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.4-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.3-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.2-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.1-py3-none-any.whl.metadata (5.4 kB)
+  Downloading tabpfn_common_utils-0.2.0-py3-none-any.whl.metadata (5.2 kB)
+  Downloading tabpfn_common_utils-0.1.9-py3-none-any.whl.metadata (5.3 kB)
+INFO: pip is looking at multiple versions of tabpfn-common-utils[telemetry-interactive] to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is still looking at multiple versions of tabpfn-common-utils[telemetry-interactive] to determine which version is compatible with other requirements. This could take a while.
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.1->tabpfn==2.2.1) (1.14.0)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.1->tabpfn==2.2.1) (3.1.6)
+Requirement already satisfied: cuda-toolkit==12.8.1 in /usr/local/lib/python3.12/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch<3,>=2.1->tabpfn==2.2.1) (12.8.1)
+Requirement already satisfied: cuda-bindings<13,>=12.9.4 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.1->tabpfn==2.2.1) (12.9.7)
+Requirement already satisfied: nvidia-cudnn-cu12==9.19.0.56 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.1->tabpfn==2.2.1) (9.19.0.56)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.1->tabpfn==2.2.1) (0.7.1)
+Requirement already satisfied: nvidia-nccl-cu12==2.28.9 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.1->tabpfn==2.2.1) (2.28.9)
+Requirement already satisfied: nvidia-nvshmem-cu12==3.4.5 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.1->tabpfn==2.2.1) (3.4.5)
+Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.1->tabpfn==2.2.1) (3.6.0)
+Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1.* in /usr/local/lib/python3.12/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch<3,>=2.1->tabpfn==2.2.1) (12.8.4.1)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90.* in /usr/local/lib/python3.12/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch<3,>=2.1->tabpfn==2.2.1) (12.8.90)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83.* in /usr/local/lib/python3.12/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch<3,>=2.1->tabpfn==2.2.1) (11.3.3.83)
+Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3.* in /usr/local/lib/python3.12/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch<3,>=2.1->tabpfn==2.2.1) (1.13.1.3)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90.* in /usr/local/lib/python3.12/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch<3,>=2.1->tabpfn==2.2.1) (12.8.90)
+Requirement already satisfied: nvidia-curand-cu12==10.3.9.90.* in /usr/local/lib/python3.12/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch<3,>=2.1->tabpfn==2.2.1) (10.3.9.90)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90.* in /usr/local/lib/python3.12/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch<3,>=2.1->tabpfn==2.2.1) (11.7.3.90)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93.* in /usr/local/lib/python3.12/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch<3,>=2.1->tabpfn==2.2.1) (12.5.8.93)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93.* in /usr/local/lib/python3.12/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch<3,>=2.1->tabpfn==2.2.1) (12.8.93)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93.* in /usr/local/lib/python3.12/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch<3,>=2.1->tabpfn==2.2.1) (12.8.93)
+Requirement already satisfied: nvidia-nvtx-cu12==12.8.90.* in /usr/local/lib/python3.12/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch<3,>=2.1->tabpfn==2.2.1) (12.8.90)
+Requirement already satisfied: numba>=0.55 in /usr/local/lib/python3.12/dist-packages (from galois->shapiq==1.4.1) (0.60.0)
+Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib->shapiq==1.4.1) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.12/dist-packages (from matplotlib->shapiq==1.4.1) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib->shapiq==1.4.1) (4.63.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib->shapiq==1.4.1) (1.5.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib->shapiq==1.4.1) (3.3.2)
+Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.12/dist-packages (from cuda-bindings<13,>=12.9.4->torch<3,>=2.1->tabpfn==2.2.1) (1.5.6)
+Requirement already satisfied: llvmlite<0.44,>=0.43.0dev0 in /usr/local/lib/python3.12/dist-packages (from numba>=0.55->galois->shapiq==1.4.1) (0.43.0)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.12/dist-packages (from posthog~=6.7->tabpfn-common-utils>=0.1.8->tabpfn-common-utils[telemetry-interactive]>=0.1.8->tabpfn==2.2.1) (1.17.0)
+Collecting backoff>=1.10.0 (from posthog~=6.7->tabpfn-common-utils>=0.1.8->tabpfn-common-utils[telemetry-interactive]>=0.1.8->tabpfn==2.2.1)
+  Downloading backoff-2.2.1-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: distro>=1.5.0 in /usr/local/lib/python3.12/dist-packages (from posthog~=6.7->tabpfn-common-utils>=0.1.8->tabpfn-common-utils[telemetry-interactive]>=0.1.8->tabpfn==2.2.1) (1.9.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch<3,>=2.1->tabpfn==2.2.1) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch<3,>=2.1->tabpfn==2.2.1) (3.0.3)
+Downloading tabpfn-2.2.1-py3-none-any.whl (173 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.7/173.7 kB 30.1 MB/s eta 0:00:00
+Downloading shapiq-1.4.1-py3-none-any.whl (5.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.9/5.9 MB 6.4 MB/s eta 0:00:00
+Downloading xgboost-2.0.3-py3-none-manylinux2014_x86_64.whl (297.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 297.1/297.1 MB 5.6 MB/s eta 0:00:00
+Downloading scikit_learn-1.4.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 101.9 MB/s eta 0:00:00
+Downloading pyarrow-17.0.0-cp312-cp312-manylinux_2_28_x86_64.whl (39.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.9/39.9 MB 21.5 MB/s eta 0:00:00
+Downloading ucimlrepo-0.0.7-py3-none-any.whl (8.0 kB)
+Downloading jedi-0.20.0-py2.py3-none-any.whl (4.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 112.5 MB/s eta 0:00:00
+Downloading eval_type_backport-0.4.0-py3-none-any.whl (6.4 kB)
+Downloading huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 50.4 MB/s eta 0:00:00
+Downloading pydantic_settings-2.15.0-py3-none-any.whl (69 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.4/69.4 kB 9.1 MB/s eta 0:00:00
+Downloading tabpfn_common_utils-0.1.9-py3-none-any.whl (24 kB)
+Downloading colour-0.1.5-py2.py3-none-any.whl (23 kB)
+Downloading galois-0.4.11-py3-none-any.whl (4.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 100.5 MB/s eta 0:00:00
+Downloading sparse_transform-0.2.1-py3-none-any.whl (27 kB)
+Downloading posthog-6.9.3-py3-none-any.whl (144 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 144.7/144.7 kB 16.2 MB/s eta 0:00:00
+Downloading backoff-2.2.1-py3-none-any.whl (15 kB)
+Installing collected packages: colour, pyarrow, jedi, eval-type-backport, backoff, xgboost, scikit-learn, posthog, huggingface-hub, galois, ucimlrepo, tabpfn-common-utils, sparse-transform, pydantic-settings, shapiq, tabpfn
+  Attempting uninstall: pyarrow
+    Found existing installation: pyarrow 18.1.0
+    Uninstalling pyarrow-18.1.0:
+      Successfully uninstalled pyarrow-18.1.0
+  Attempting uninstall: xgboost
+    Found existing installation: xgboost 3.3.0
+    Uninstalling xgboost-3.3.0:
+      Successfully uninstalled xgboost-3.3.0
+  Attempting uninstall: scikit-learn
+    Found existing installation: scikit-learn 1.6.1
+    Uninstalling scikit-learn-1.6.1:
+      Successfully uninstalled scikit-learn-1.6.1
+  Attempting uninstall: huggingface-hub
+    Found existing installation: huggingface_hub 1.23.0
+    Uninstalling huggingface_hub-1.23.0:
+      Successfully uninstalled huggingface_hub-1.23.0
+Successfully installed backoff-2.2.1 colour-0.1.5 eval-type-backport-0.4.0 galois-0.4.11 huggingface-hub-0.36.2 jedi-0.20.0 posthog-6.9.3 pyarrow-17.0.0 pydantic-settings-2.15.0 scikit-learn-1.4.2 shapiq-1.4.1 sparse-transform-0.2.1 tabpfn-2.2.1 tabpfn-common-utils-0.1.9 ucimlrepo-0.0.7 xgboost-2.0.3
+
+STDERR
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+cuml-cu12 26.2.0 requires scikit-learn>=1.5, but you have scikit-learn 1.4.2 which is incompatible.
+gradio 6.20.0 requires huggingface-hub<2.0,>=1.2.0, but you have huggingface-hub 0.36.2 which is incompatible.
+hdbscan 0.8.44 requires scikit-learn>=1.6, but you have scikit-learn 1.4.2 which is incompatible.
+transformers 5.13.1 requires huggingface-hub<2.0,>=1.5.0, but you have huggingface-hub 0.36.2 which is incompatible.
+umap-learn 0.5.12 requires scikit-learn>=1.6, but you have scikit-learn 1.4.2 which is incompatible.

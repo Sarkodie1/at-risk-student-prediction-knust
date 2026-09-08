@@ -1,0 +1,4 @@
+partition,group_variable,model,extreme_role,group,equal_opportunity_difference,verdict,reporting_constraint
+held_out_test,Q13_Faculty,B-TabPFN K=1,highest_recall_group,College of Health Sciences,0.38888888888888884,inconclusive_relative_to_review_trigger,extreme group is publicly suppressed; attach this limitation or omit the aggregate EOD
+nested_development_oof,Q15_Gender,B-TabPFN nested K,highest_recall_group,Prefer not to say,0.4772727272727273,review_trigger_exceeded,extreme group is publicly suppressed; attach this limitation or omit the aggregate EOD
+nested_development_oof,Q15_Gender,Standard TabPFN v2,highest_recall_group,Prefer not to say,0.48181818181818187,inconclusive_relative_to_review_trigger,extreme group is publicly suppressed; attach this limitation or omit the aggregate EOD

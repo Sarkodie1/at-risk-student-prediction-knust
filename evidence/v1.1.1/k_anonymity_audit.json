@@ -1,0 +1,12 @@
+{
+  "quasi_identifiers": [
+    "faculty",
+    "year",
+    "gender"
+  ],
+  "minimum_observed_cell": 1,
+  "observed_cells_below_5": 31,
+  "observed_cells": 56,
+  "singleton_cells": 14,
+  "interpretation": "No k-anonymity guarantee is claimed; restricted access, aggregation and public-cell suppression are used."
+}

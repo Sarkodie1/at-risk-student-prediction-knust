@@ -1,0 +1,2 @@
+seeds,mean_delta_recall,sd_delta_recall,sign_flip_count,sd_to_absolute_mean_ratio,c1_status,reporting_rule
+10,0.19375,0.06215180787573458,0,0.32078352451992037,pass,report the complete ten-seed sensitivity

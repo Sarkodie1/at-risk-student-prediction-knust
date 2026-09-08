@@ -1,0 +1,38 @@
+table_id,title,source_artifact,role,tier
+1,"Feature codebook, constructs and descriptive statistics",feature_codebook_and_descriptives.csv,Methods/Results,main
+2,Participant characteristics,sample_demographics_extended.csv,Methods/Results,main
+3,Nested development comparison,development_model_summary_mean_sd.csv,Results,main
+4,Secondary held-out-test comparison,heldout_test_model_comparison.csv,Results,main
+5,Balance and context-size mechanism ablation,two_factor_ablation_summary.csv,Results,main
+6,Calibration and recalibration,recalibration_comparison.csv,Results,main
+7,Subgroup performance and uncertainty,fairness_subgroups.csv,Results,main
+8,FSII main effects across observed-positive held-out students,fsii_main_effects_summary.csv,Results,main
+9,Ten largest pairwise FSII interactions,fsii_top_interactions_summary.csv,Results,main
+S1,Participant flow,participant_flow_summary.csv,Methods,supplement
+S2,Measurement reliability,reliability.csv,Methods/Results,supplement
+S3,Nested K-selection evidence,nested_k_inner_metrics.csv,Results,supplement
+S4,K sensitivity grid,k_ablation.csv,Results,supplement
+S5,Threshold sensitivity,threshold_sensitivity_oof.csv,Results,supplement
+S6,Corrected effect inference,effect_size_and_ci.csv,Results,supplement
+S7,Referral-workload scenarios,operational_tradeoff.csv,Discussion,supplement
+S8,Equal-opportunity differences,fairness_equal_opportunity.csv,Results,supplement
+S9,No-distress attribution shift,theory_attribution_sensitivity.csv,Sensitivity,supplement
+S10,UCI algorithmic robustness,uci_summary.csv,Robustness,supplement
+S11,Serious-only outcome sensitivity,serious_only_outcome_sensitivity.csv,Sensitivity,supplement
+S12,Aggregate false-negative profile,false_negative_profile_summary.csv,Error analysis,supplement
+S13,Nested training-only feature-selection sensitivity,nested_feature_selection_frequency.csv,Provenance sensitivity,supplement
+S14,Fixed-size minority-prevalence sensitivity,balance_ratio_fixed_size_summary.csv,Mechanism sensitivity,supplement
+S15,Development-based performance-mechanism diagnostics,performance_mechanism_diagnostic.csv,Error analysis,supplement
+S16,Threshold-tuned paired comparison,mcnemar_b050_vs_standard_oof_threshold.csv,Results,supplement
+S17,Cold setup and warm batch computational cost,computational_cost.csv,Implementation,supplement
+S18,Held-out training-only feature-selection sensitivity,heldout_feature_selection_sensitivity.csv,Sensitivity,supplement
+S19,Checkpoint-stage execution and recovery accounting,computational_run_accounting.csv,Reproducibility,supplement
+S20,Complete FSII main-effect and 91-pair interaction summary,fsii_population_summary.csv,Explainability supplement,supplement
+S21,Descriptive UCI overlapping-split comparisons,uci_descriptive_comparisons.csv,Robustness,supplement
+S22,Construct-feature-metric traceability,construct_feature_metric_map.csv,Methods,supplement
+S23,Collected faculty-to-official-college crosswalk,college_crosswalk_audit.csv,Methods/data quality,supplement
+S24,Validated FSII checkpoint provenance,fsii_checkpoint_validation_summary.csv,Reproducibility,supplement
+S25,Survey and institutional gender composition,population_gender_comparison.csv,Sampling and generalisability,supplement
+S26,Survey and institutional college composition,population_college_comparison.csv,Sampling and generalisability,supplement
+S27,Survey categories outside the institutional comparison,population_comparison_unmatched_categories.csv,Sampling and generalisability,supplement
+S28,Official QAPO undergraduate enrolment counts,qapo_undergraduate_enrolment_2025_2026.csv,Sampling and generalisability,supplement

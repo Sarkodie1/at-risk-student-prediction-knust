@@ -1,0 +1,15 @@
+feature,missing_n,missing_percent,denominator_n,denominator_scope
+Q1_Academic_Performance,0,0.0,421,analytic undergraduate cohort
+Q2_Attendance,0,0.0,421,analytic undergraduate cohort
+Q3_Assignments,13,3.0878859857482186,421,analytic undergraduate cohort
+Q4_Repeating,0,0.0,421,analytic undergraduate cohort
+Q6_PHQ2_Interest,0,0.0,421,analytic undergraduate cohort
+Q7_PHQ2_Depressed,0,0.0,421,analytic undergraduate cohort
+Q8_GAD2_Nervous,0,0.0,421,analytic undergraduate cohort
+Q9_GAD2_Worry,0,0.0,421,analytic undergraduate cohort
+Q10_Financial_Difficulty,0,0.0,421,analytic undergraduate cohort
+Q11_Internet_Access,0,0.0,421,analytic undergraduate cohort
+Q12_Outside_Responsibilities,0,0.0,421,analytic undergraduate cohort
+Q14_Year,0,0.0,421,analytic undergraduate cohort
+Q16_Belonging,0,0.0,421,analytic undergraduate cohort
+Q13_Faculty,0,0.0,421,analytic undergraduate cohort

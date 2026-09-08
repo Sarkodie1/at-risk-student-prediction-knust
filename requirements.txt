@@ -1,6 +1,6 @@
 # Explicit installation set used by the authoritative Colab notebook.
 # The Colab base image supplies NumPy, pandas, SciPy, PyTorch, matplotlib and seaborn;
-# their resolved versions are recorded in evidence/v1.1.0/environment.json.
+# their resolved versions are recorded in evidence/v1.1.1/environment.json.
 setuptools<82
 requests==2.32.4
 jedi>=0.16

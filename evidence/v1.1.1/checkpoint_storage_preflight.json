@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "storage_mode": "private_google_drive",
+  "private_checkpoint_directory": "/content/drive/MyDrive/KNUST_BTabPFN_private/v6_13",
+  "resumable_analysis_checkpoint_directory": "/content/drive/MyDrive/KNUST_BTabPFN_private/v6_13/analysis_jobs/20ade7df67cae3f77f0a",
+  "public_evidence_pack_inclusion": false
+}

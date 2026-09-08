@@ -1,0 +1,11 @@
+feature,full_model_mean_signed_fsii,full_model_mean_abs_fsii,no_distress_mean_signed_fsii,no_distress_mean_abs_fsii,signed_shift_after_distress_removal,absolute_shift_after_distress_removal,theory_focus,interpretation
+Q10_Financial_Difficulty,0.0060438594,0.0388800332,0.0084475849,0.0428623542,0.0024037255,0.003982321,True,descriptive attribution shift; not causal mediation
+Q11_Internet_Access,0.0041365124,0.0098602529,0.0042146543,0.0104444797,7.81419e-05,0.0005842268,True,descriptive attribution shift; not causal mediation
+Q12_Outside_Responsibilities,0.0010108609,0.0433071841,0.0010568277,0.049585048,4.59668e-05,0.0062778639,False,descriptive attribution shift; not causal mediation
+Q13_Faculty,0.0033014625,0.0147895258,0.0050346241,0.0113793356,0.0017331616,-0.0034101902,False,descriptive attribution shift; not causal mediation
+Q14_Year,0.0051361863,0.0293043003,0.0051055952,0.0335634543,-3.05911e-05,0.004259154,False,descriptive attribution shift; not causal mediation
+Q16_Belonging,0.038487906,0.0692594208,0.0454043982,0.0791607958,0.0069164922,0.0099013749,False,descriptive attribution shift; not causal mediation
+Q1_Academic_Performance,0.0074008534,0.0220258821,0.0102522958,0.029117477,0.0028514424,0.0070915949,False,descriptive attribution shift; not causal mediation
+Q2_Attendance,0.042531932,0.0789922756,0.0461426012,0.0851501623,0.0036106693,0.0061578868,False,descriptive attribution shift; not causal mediation
+Q3_Assignments,-0.0020728666,0.0665113067,-0.0007586206,0.0719472879,0.001314246,0.0054359812,False,descriptive attribution shift; not causal mediation
+Q4_Repeating,0.0351672626,0.0888484424,0.0320782537,0.0925248661,-0.0030890089,0.0036764237,False,descriptive attribution shift; not causal mediation

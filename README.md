@@ -2,9 +2,9 @@
 
 This repository contains the executed analysis notebook and public verification evidence for:
 
-**Balanced Context Sampling for TabPFN v2: Recovering Minority-Class Recall in Explainable At-Risk Student Prediction at KNUST Using Ghana-Specific Mental Health and Structural Barrier Features**
+**Balanced Context Sampling for TabPFN v2: Explainable Concurrent Identification of Withdrawal Consideration among KNUST Undergraduates**
 
-Repository release **v1.1.0** corresponds to submission revision **6.13.2** and computational protocol **6.13.0**. It supersedes the v1.0.1/v5.3 results narrative.
+Repository release **v1.1.1** corresponds to closeout submission revision **6.14.0-closeout** and computational protocol **6.13.0**. The closeout release adds the supervisor-requested reporting checks and a separately labelled ten-seed sensitivity analysis; it does not change the prespecified model, partition, operating threshold or primary FSII protocol. Release v1.1.0 remains the archived pre-closeout state.
 
 ## Study scope
 
@@ -42,13 +42,13 @@ notebooks/
   knust_btabpfn_analysis.ipynb   executed authoritative notebook
 modules/
   balanced_context.py           reusable context-construction helper
-evidence/v1.1.0/
+evidence/v1.1.1/
   aggregate tables, diagnostics, manifests and publication figures
 requirements.txt                explicit packages installed by the notebook
 RELEASE_NOTES.md                release-to-protocol mapping and migration notes
 ```
 
-The concise notebook filename is stable across future releases. Version identity is recorded by the Git tag and by `evidence/v1.1.0/submission_release.json`.
+The concise notebook filename is stable across future releases. Version identity is recorded by the Git tag and by `evidence/v1.1.1/submission_release.json`.
 
 ## Reproduction and verification
 
@@ -63,12 +63,13 @@ The credential, raw survey, row-level predictions and private checkpoints must n
 
 The public evidence package permits review of aggregate results without exposing sensitive student-level data. Start with:
 
-- [`results_manifest.json`](evidence/v1.1.0/results_manifest.json) for the authoritative run identity and completion state;
-- [`claims_evidence_source.csv`](evidence/v1.1.0/claims_evidence_source.csv) for claim-to-artifact traceability;
-- [`decision_provenance_register.csv`](evidence/v1.1.0/decision_provenance_register.csv) for analysis decisions;
-- [`run_status_dashboard.csv`](evidence/v1.1.0/run_status_dashboard.csv) for component completion;
-- [`warning_summary.csv`](evidence/v1.1.0/warning_summary.csv) for classified compatibility notices; and
-- [`artifact_manifest.csv`](evidence/v1.1.0/artifact_manifest.csv) for artifact hashes.
+- [`results_manifest.json`](evidence/v1.1.1/results_manifest.json) for the authoritative run identity and completion state;
+- [`claims_evidence_source.csv`](evidence/v1.1.1/claims_evidence_source.csv) for claim-to-artifact traceability;
+- [`decision_provenance_register.csv`](evidence/v1.1.1/decision_provenance_register.csv) for analysis decisions;
+- [`run_status_dashboard.csv`](evidence/v1.1.1/run_status_dashboard.csv) for component completion;
+- [`warning_summary.csv`](evidence/v1.1.1/warning_summary.csv) for classified compatibility notices;
+- [`closeout_verdict.csv`](evidence/v1.1.1/closeout_verdict.csv) for the six closeout conditions; and
+- [`artifact_manifest.csv`](evidence/v1.1.1/artifact_manifest.csv) for artifact hashes.
 
 The full Colab base image reports conflicts involving unused preinstalled packages. The imported analysis stack is separately version-checked and functionally tested in the notebook; see `pip_check.json`, `resolved_analysis_versions.json` and `tabpfn_integration_probe.json`.
 
@@ -80,10 +81,11 @@ Only aggregate or disclosure-controlled evidence is public. The repository does 
 
 ## Archive
 
-- Version-specific v1.1.0 archive: [DOI 10.5281/zenodo.22479886](https://doi.org/10.5281/zenodo.22479886)
+- Version-specific v1.1.1 archive: **pending publication of this release on Zenodo**
+- Pre-closeout v1.1.0 archive: [DOI 10.5281/zenodo.22479886](https://doi.org/10.5281/zenodo.22479886)
 - Latest-version archive: [Zenodo concept DOI 10.5281/zenodo.21709992](https://doi.org/10.5281/zenodo.21709992)
 
-Use the version-specific DOI when citing the exact v1.1.0 analysis. The concept DOI resolves to the latest archived repository version.
+Use the version-specific DOI when citing an exact analysis release. The concept DOI resolves to the latest archived repository version.
 
 ## Software notice
 

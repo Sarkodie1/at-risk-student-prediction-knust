@@ -1,0 +1,6 @@
+stage,n,removed_at_stage,note
+responses_received,422,0,Anonymous design provides no reliable respondent identifier; no response was removed as a presumed duplicate.
+undergraduate_target_population,421,1,One postgraduate response is retained in the raw audit and excluded from the undergraduate primary analysis.
+target_observed,421,0,Primary outcome must be observed.
+missingness_eligible,421,0,At most two missing predictors; retained missing values are imputed within training folds.
+final_analytic_cohort,421,0,All eligible undergraduate responses retained.

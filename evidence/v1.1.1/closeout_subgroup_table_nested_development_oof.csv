@@ -1,0 +1,31 @@
+partition,group_variable,group,model,n,positive_target_n,tp,fp,fn,recall,recall_wilson_95_ci_low,recall_wilson_95_ci_high,interpretation_status,suppression_note
+nested_development_oof,Q15_Gender,Female,Standard TabPFN v2,153.0,44.0,14.0,18.0,30.0,0.3181818181818182,0.1999930771085342,0.4655689606218224,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q15_Gender,Male,Standard TabPFN v2,174.0,78.0,44.0,16.0,34.0,0.5641025641025641,0.45361986570375756,0.6685675945895508,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q15_Gender,Prefer not to say,Standard TabPFN v2,,,,,,,,,not_interpretable_publicly,suppressed: public cell or event count below five
+nested_development_oof,Q14_Year,1,Standard TabPFN v2,89.0,27.0,10.0,9.0,17.0,0.37037037037037035,0.215325129609656,0.5577076558789762,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q14_Year,2,Standard TabPFN v2,86.0,33.0,19.0,7.0,14.0,0.5757575757575758,0.4080726333731244,0.727644033665898,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q14_Year,3,Standard TabPFN v2,60.0,29.0,18.0,7.0,11.0,0.6206896551724138,0.44002544205988525,0.7731197789919018,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q14_Year,4,Standard TabPFN v2,96.0,38.0,15.0,11.0,23.0,0.39473684210526316,0.255980757481601,0.5528213200395746,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q14_Year,5,Standard TabPFN v2,,,,,,,,,not_interpretable_publicly,suppressed: public cell or event count below five
+nested_development_oof,Q13_Faculty,College of Agriculture and Natural Resources,Standard TabPFN v2,,,,,,,,,not_interpretable_publicly,suppressed: public cell or event count below five
+nested_development_oof,Q13_Faculty,College of Art and Built Environment,Standard TabPFN v2,,,,,,,,,not_interpretable_publicly,suppressed: public cell or event count below five
+nested_development_oof,Q13_Faculty,College of Engineering,Standard TabPFN v2,38.0,15.0,11.0,2.0,4.0,0.7333333333333333,0.48049565944019423,0.8910254667430763,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q13_Faculty,College of Health Sciences,Standard TabPFN v2,40.0,14.0,4.0,6.0,10.0,0.2857142857142857,0.11721378644576921,0.5464908432989319,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q13_Faculty,College of Humanities and Social Sciences,Standard TabPFN v2,109.0,45.0,22.0,10.0,23.0,0.4888888888888889,0.3495702375287849,0.629955353554168,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q13_Faculty,College of Science,Standard TabPFN v2,123.0,50.0,24.0,12.0,26.0,0.48,0.3479713528657804,0.6148825510995539,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q13_Faculty,Unresolved Other,Standard TabPFN v2,,,,,,,,,not_interpretable_publicly,suppressed: public cell or event count below five
+nested_development_oof,Q15_Gender,Female,B-TabPFN nested K,153.0,44.0,23.0,27.0,21.0,0.5227272727272727,0.37935465560621634,0.662450089677489,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q15_Gender,Male,B-TabPFN nested K,174.0,78.0,58.0,32.0,20.0,0.7435897435897436,0.6368667271880386,0.8274456219265334,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q15_Gender,Prefer not to say,B-TabPFN nested K,,,,,,,,,not_interpretable_publicly,suppressed: public cell or event count below five
+nested_development_oof,Q14_Year,1,B-TabPFN nested K,89.0,27.0,17.0,15.0,10.0,0.6296296296296297,0.44229234412102386,0.7846748703903441,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q14_Year,2,B-TabPFN nested K,86.0,33.0,24.0,15.0,9.0,0.7272727272727273,0.5578244099712737,0.8493255911457935,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q14_Year,3,B-TabPFN nested K,60.0,29.0,22.0,11.0,7.0,0.7586206896551724,0.5789239838218866,0.8778157755747992,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q14_Year,4,B-TabPFN nested K,96.0,38.0,23.0,17.0,15.0,0.6052631578947368,0.4471786799604255,0.744019242518399,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q14_Year,5,B-TabPFN nested K,,,,,,,,,not_interpretable_publicly,suppressed: public cell or event count below five
+nested_development_oof,Q13_Faculty,College of Agriculture and Natural Resources,B-TabPFN nested K,,,,,,,,,not_interpretable_publicly,suppressed: public cell or event count below five
+nested_development_oof,Q13_Faculty,College of Art and Built Environment,B-TabPFN nested K,,,,,,,,,not_interpretable_publicly,suppressed: public cell or event count below five
+nested_development_oof,Q13_Faculty,College of Engineering,B-TabPFN nested K,38.0,15.0,13.0,6.0,2.0,0.8666666666666667,0.6211801716767763,0.9626387408969347,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q13_Faculty,College of Health Sciences,B-TabPFN nested K,40.0,14.0,7.0,8.0,7.0,0.5,0.26799202452413634,0.7320079754758637,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q13_Faculty,College of Humanities and Social Sciences,B-TabPFN nested K,109.0,45.0,29.0,18.0,16.0,0.6444444444444445,0.4983581419637687,0.7678091739578413,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q13_Faculty,College of Science,B-TabPFN nested K,123.0,50.0,34.0,22.0,16.0,0.68,0.5418970269185591,0.7924178373934315,interpretable_under_predeclared_event_rule,not_suppressed
+nested_development_oof,Q13_Faculty,Unresolved Other,B-TabPFN nested K,,,,,,,,,not_interpretable_publicly,suppressed: public cell or event count below five

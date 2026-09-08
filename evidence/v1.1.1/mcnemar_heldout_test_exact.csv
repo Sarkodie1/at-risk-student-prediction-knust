@@ -1,0 +1,2 @@
+partition,model_a,model_b,both_correct,standard_only_correct,btabpfn_only_correct,both_wrong,method,statistic,p_value,discordant_odds_btab_over_standard
+held_out_test,Standard TabPFN v2,B-TabPFN K=1,57,5,4,19,exact two-sided binomial McNemar,4.0,1.0,0.8

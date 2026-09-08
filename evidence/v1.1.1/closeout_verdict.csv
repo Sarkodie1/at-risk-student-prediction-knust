@@ -1,0 +1,13 @@
+item,check,status,evidence
+C1,ten-seed sign stability,CLOSED,10 seeds; 0 sign flips; SD=0.062152
+C2,leave-one-fold-out direction,CLOSED,10/10 hold
+C3,paired MDE below observed development difference,CLOSED,MDE=0.089951; observed=0.188462
+C4,matched tuning budget across tuned arms,CLOSED,Standard TabPFN is frozen and has no free hyperparameter
+C5,base rate and complete comparator grid,CLOSED,held-out base rate=32/85=0.376471
+C6,no predictive fit on evaluation data,CLOSED,7/7 static-scan sites reviewed and classified
+Q16,fairness resolution,INCONCLUSIVE_BY_DESIGN,available=6-20 positives/group; required=76 positives or 202 students/group
+Q17a,"subgroup counts, suppression and Wilson intervals",CLOSED,58 rows; suppressed rows retained visibly
+Q17b,"FSII SD, interval and direction status",CLOSED,5 rows; 3 intervals cross zero
+REPO-2,missingness denominator,CLOSED,analytic denominator=421
+REPO-3,0.40 balance condition surfaced,CLOSED,complete three-condition grid retained
+REPO-4,run integrity figures,CLOSED,55/55 required components completed; critical warnings=0; compatibility notices=286

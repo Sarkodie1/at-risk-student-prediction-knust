@@ -1,5 +1,35 @@
 # Release notes
 
+## v1.1.1 — closeout submission revision 6.14.0-closeout
+
+This patch release preserves the v1.1.0 computational protocol and primary results while adding the evidence requested in the final verification report.
+
+### Added and clarified
+
+- Added the full held-out model-comparison grid and tuning-parity evidence.
+- Added denominator-complete missingness reporting and explicit false-negative missingness accounting.
+- Added the balance-ratio sensitivity grid and leave-one-fold-out K-selection stability analysis.
+- Added both requested subgroup tables, with zero-denominator cells retained as not estimable rather than silently removed.
+- Added the exact 40% K-selection comparator requested in the closeout support script.
+- Added run-integrity and leak-scan evidence, and retained every primary FSII row used in Section 3.4.
+- Added a separately labelled ten-seed sensitivity analysis; it is not substituted for the prespecified primary analysis.
+- Updated the authoritative executed notebook and public evidence package without exposing restricted row-level data, credentials or checkpoints.
+
+### Reproducibility identity
+
+- Submission revision: `6.14.0-closeout`
+- Computational protocol: `6.13.0` (unchanged)
+- Protocol hash: `29313c3ae78b30ae423f74d7730651224e950488d1aa84799770ad23a6b841ff`
+- Modelling fingerprint: `a8466486d0bfbeeb78bf2191e1df4047d77b528755f5497db77404e3d542a1e0`
+- Locked results SHA-256: `b42044a51c23f4f9c7f9b9d8fcb46a83bf959135dbf31445b5fb5e47c80ca756`
+
+The v1.1.0 state remains available through its Git tag, version-specific DOI and repository history.
+
+### Archive
+
+- Version-specific DOI: pending publication
+- Concept DOI for the latest version: `10.5281/zenodo.21709992`
+
 ## v1.1.0 — authoritative submission revision 6.13.2
 
 This release replaces the v1.0.1/v5.3 repository narrative with the completed, executed submission analysis.

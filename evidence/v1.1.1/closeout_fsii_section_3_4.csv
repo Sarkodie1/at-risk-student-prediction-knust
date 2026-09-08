@@ -1,0 +1,6 @@
+absolute_attribution_rank,feature_i,feature_j,mean_signed_fsii,sd_signed_fsii,signed_ci_low,signed_ci_high,direction,positive_direction_fraction,explained_students,budget,uncertainty_role
+1,Q7_PHQ2_Depressed,Q9_GAD2_Worry,-0.01617784496195324,0.06800380399014723,-0.04069583084721036,0.008340140923303884,uncertain_ci_crosses_zero,0.375,32,1024,descriptive unadjusted interval; not a significance test
+2,Q7_PHQ2_Depressed,Q8_GAD2_Nervous,-0.017390576650896047,0.055170083042503135,-0.037281512715598195,0.002500359413806101,uncertain_ci_crosses_zero,0.34375,32,1024,descriptive unadjusted interval; not a significance test
+3,Q6_PHQ2_Interest,Q7_PHQ2_Depressed,-0.005431846676798981,0.052617840843960796,-0.024402601302699778,0.013538907949101814,uncertain_ci_crosses_zero,0.5625,32,1024,descriptive unadjusted interval; not a significance test
+4,Q8_GAD2_Nervous,Q9_GAD2_Worry,-0.020536836240672002,0.04709721475969252,-0.03751719291131308,-0.0035564795700309265,negative,0.3125,32,1024,descriptive unadjusted interval; not a significance test
+5,Q6_PHQ2_Interest,Q8_GAD2_Nervous,-0.012894092706963135,0.03216188264216621,-0.024489687929521213,-0.0012984974844050569,negative,0.34375,32,1024,descriptive unadjusted interval; not a significance test

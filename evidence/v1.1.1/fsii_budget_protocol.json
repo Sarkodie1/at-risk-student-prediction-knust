@@ -1,0 +1,7 @@
+{
+  "selected_budget": 1024,
+  "rule": "Use 512 only when aggregate signed and absolute main-effect and interaction summaries pass all declared 512-versus-1024 criteria; otherwise use 1024",
+  "reference_budget": 1024,
+  "same_random_state_within_student_across_budgets": true,
+  "prediction_scale": "positive-class probability"
+}
